@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Dinish";
+  src: url("../fonts/DinishExpanded-Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Dinish Square";
+  src: url("../fonts/RSSDinishExpandedSquare-Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Dinish Round";
+  src: url("../fonts/RSSDinishExpandedRound-Regular.otf");
+  font-weight: 400;
+}
+
+body{
+	font-family: Dinish Round, sans-serif;
+}
