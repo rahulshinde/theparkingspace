@@ -8,94 +8,148 @@
 </head>
 <body>
 	<header>
-		<h1>The Parking Space</h1>
+		<div class="background">
+			<img id='logo' src="assets/logo.svg">
+		</div>
+		<nav id="main_nav">
+			<div id="nav_link_container"class='background'>
+				<a class='nav_link selected' href="#listen">Listen & Read</a>
+				<a class='nav_link' href="#about">Images & Video</a>
+				<a class='nav_link' href="#about">About & Location</a>
+				<a class='nav_link' href="survey">Survey & Feedback</a>
+			</div>
+
+			<div id="ground_container">
+				<img id='figure' src="assets/figure.svg">
+				<img id='ground' src="assets/ground.svg">
+			</div>
+		</nav>
+		<button class='nav_button button background'>
+				<img src="assets/down.svg">
+			</button>
+
+			<button class='nav_button button background'>
+				<img src="assets/up.svg">
+			</button>
+		<div id='header_info' class="background">
+			The Parking Space is a site-specific listening experience that reimagines a humble parking ramp in downtown Iowa City* as a place of rest and perspective.
+		</div>
 	</header>
-	<nav id="main_nav">
-		<ol id="nav_list">
-			<li class='nav_list_item'>
-				<a href="#about">About & Location</a>
-			</li>
-			<li class='nav_list_item'>
-				<a href="#listen">Listen & Read</a>
-			</li>
-			<li class='nav_list_item'>
-				<a href="survey">Survey & Feedback</a>
-			</li>
-		</ol>
-	</nav>
 	<main>
+		<div id="header_container">
+			<h1>The Parking Space</h1>
+		</div>
+
+		<section id="listen">
+			<h2>Listen & Read</h2>
+			<div class='content_container' id='audio'>
+				<h3>Audio</h3>
+				<div class="half">
+					<span class="audio_heading">Stream the full 27 min piece</span>
+					<audio class="audio_track" controls>
+						<source src="tracks/the_parking_space-single_track.mp3" type="audio/mpeg">
+					</audio>
+					<a class="mp3_download" href="">
+						<img src="assets/download.svg">
+						Download full piece.
+					</a>
+				</div>
+				<div class="half">
+					<span class="audio_heading">Choose your own adventure</span>
+					<audio class="audio_track" controls>
+						<source src="tracks/418.mp3" type="audio/mpeg">
+					</audio>
+					<div id="track_select">
+						<button class='button selected'>start here</button>
+						<button class='button'>418</button>
+						<button class='button'>444</button>
+						<button class='button'>427</button>
+						<button class='button'>451</button>
+						<button class='button'>480</button>
+						<button class='button'>515</button>
+						<button class='button'>502</button>
+						<button class='button'>the one that doesn’t exist</button>
+						<button class='button'>530</button>
+						<button class='button'>531</button>
+					</div>
+					<a class="mp3_download" href="">
+						<img src="assets/download.svg">
+						Download album
+					</a>
+				</div>
+			</div>
+			<div  class='content_container' id="written">
+				<h3>Written</h3>
+				
+				<a id='print_download' href="">
+					<img src="assets/print_download.svg">
+					<span>Download the transcript of the piece</span>
+				</a>
+			</div>
+		</section>
+
+		<section id="image">
+			<h2>Image & Video</h2>
+			<a href='visual/360.mp4' class='image_link third'>
+				A 360 degree video of the top two levels of the parking space. 
+			</a>
+
+			<a href='visual/banging_on_wires.mp4' class='image_link third'>
+				A video looking up at the metal wires that act as barriers around the edges of the building. Stephanie bangs on these wires creating different low vibrations.
+			</a>
+
+			<a href='visual/building.mp4' class='image_link third'>
+				A video showing the facade of the parking space. There is a lot of wind in this video.
+			</a>
+
+			<a href='visual/buy_a_ticket.jpg' class='image_link third'>
+				An image taken on a stairwell looking down on the ticket machines that can be used to purchase a parking ticket. The view of the machine is partially obscured by a bright blue metal beam that runs in a diagonal from the bottom left of the photo to the top right.
+			</a>
+
+			<a href='visual/light.jpg' class='image_link third'>
+				An image of a horizontal florecant light fixture mounted on the wall of the stairwell. It is close to the corner of the wall which is painted in a teal blue.
+			</a>
+
+			<a href='visual/view_over_railing.jpg' class='image_link third'>
+				An image taken from the top level of the parking lot. The foreground is in focus while the background is blurry. The blurry background contains a view of the street, in which there is a bus picking up riders.
+			</a>
+		</section>
+
 		<section id="about">
 			<h2>About & Location</h2>
-			<div>
-				a site-specific listening experience that reimagines a humble parking ramp in downtown Iowa City** as a place of rest and perspective. 
+			<div class="blue_background third" id='location_wrapper'>
+				<img src="assets/location.svg">
+				Chauncey Swan Parking Ramp <br> 415 E. Washington
 			</div>
 
-			<div>
-				Chauncey Swan Parking Ramp 415 E. Washington
-			</div>
-
-			<div>
+			<div class="blue_background third">
 				 You may walk, bike, or drive to the parking ramp. Having a car is not necessary for the experience. If you drive, we recommend you park your car on the Levels 1, 2, or 3. Parking is  $0.75 an hour. The space is wheelchair accessible.
 			</div>
 
-			<div>
+			<div class="blue_background third">
 				We acknowledge the land known as Iowa City belongs to the indigenous people of the Sac and Fox of the Iowa in Mississippi, Kickapoo, Omaha, Sioux, Otoe, Iowa, Ponca, Winnebago, Menomiee, Osage, Potawatomi, Ottawa, Missouri. We invite you to consider what your understanding of "public space" means as you listen.
 			</div>
-		</section>
-		<section id="listen">
-			<h2>Listen & Read</h2>
-			<ol>
-				<h3>Audio</h3>
-				<li>
-					Stream the full 27 min piece (audio player)
-				</li>
-				<li>
-					Choose your own adventure
-					<ul>
-						<li>start here (audio player/maybe image?)</li>
-						<li>418 (audio player/maybe image?)</li>
-						<li>444 (audio player/maybe image?)</li>
-						<li>427 (audio player/maybe image?)</li>
-						<li>451 (audio player/maybe image?)</li>
-						<li>480 (audio player/maybe image?)</li>
-						<li>515 (audio player/maybe image?)</li>
-						<li>502 (audio player/maybe image?)</li>
-						<li>the one that doesn’t exist (audio player/maybe image?)</li>
-						<li>530 (audio player/maybe image?)</li>
-						<li>531 (audio player/maybe image?)</li>
-					</ul>
-				</li>
-				<li>
-					<a href="">Download the full piece for offline listening (link downloads mp3 of full 27 minute piece, maybe suggest creating an album that is downloadable)</a>
-				</li>
-			</ol>
-			<ol>
-				<h3>Written</h3>
-				<li>
-					<a href="">Download the transcript of the piece (link downloads pdf file)</a>
-				</li>
-			</ol>
-		</section>
-		<section id="listen">
-			<h2>Survey & Feedback</h2>
-			<ol>
-				<li>
-					<a href="">Let us know about your experience by taking this short survey</a>
-				</li>
-				<li>
-					If you are on instagram take a picture and tag us: <a href="">@the_parking_space</a>
-				</li>
-			</ol>
-		</section>
-	</main>
-	<footer>
-		<div>
+
+			<div class="blue_background third">
 			Created in collaboration by
 			Steven Willis, Stephanie Miracle, and Ramin Roshandel
-		</div>
-		<div>
-			Site by Rahul & Rush
-		</div>
-	</footer>
+			</div>
+			<div class='blue_background third'>
+				Site by Rahul & Rush
+			</div>
+		</section>
+		
+		<section id="survey">
+			<h2>Survey & Feedback</h2>
+			<div class="content_container third">
+				<a href="">Let us know about your experience by taking this short survey</a>	
+			</div>
+			<div class="content_container third">
+				If you are on instagram take a picture and tag us: <a href="">@the_parking_space</a>
+			</div>
+		</section>
+	</main>
+
+	<script type="text/javascript" src="js/player.js"></script>
 </body>
 </html>
