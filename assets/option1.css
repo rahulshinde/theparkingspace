@@ -89,11 +89,11 @@ a{
 .background,
 .blue_background{
   padding:  1.5rem;
-  border-radius: 1rem;
   box-sizing: border-box;
 }
 
 .background{
+  border-radius: 1rem;
   background-color: white;
 }
 
