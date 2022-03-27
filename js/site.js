@@ -10,7 +10,7 @@ var scroll_position,
 var body = document.body,
     html = document.documentElement;
 
-window.addEventListener("load", setup); 
+window.addEventListener("load", setup);
 
 function setup(){
   document.querySelectorAll('.open_image').forEach((e) => {

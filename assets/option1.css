@@ -257,8 +257,9 @@ main{
 
 main section{
   box-sizing: border-box;
-  width:  80%;
-  margin-left: 10%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -341,58 +342,6 @@ main section{
   width:  calc(50% - 4rem);
 }
 
-.audio_heading{
-  display: block;
-  margin-bottom: 1rem;
-  font-size: var(--m_font);
-}
-
-.audio_track{
-  margin-bottom: 1rem;
-}
-
-#track_select{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#track_select button.selected{
-  background-color: var(--blue);
-  color: #fff;
-}
-
-#track_select button{
-  margin:  0.5rem;
-  padding:  0.5rem;
-  border-radius: 0.5rem;
-  box-sizing: border-box;
-  font-family: 'Dinish';
-  color: var(--blue);
-  border: 3px solid var(--blue);
-  font-size: var(--s_font);
-}
-
-#mp3_downloads{
-  width: 100%;
-  color:  #fff;
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  border-radius: 2rem;
-  background-color: var(--blue);
-}
-.mp3_download{
-  display: flex;
-  margin-top: 1rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.mp3_download img{
-  height: 1.5rem;
-  margin-right: 1rem;
-}
 
 .image_link{
   box-sizing: border-box;

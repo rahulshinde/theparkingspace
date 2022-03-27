@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>The Parking Space</title>
 	<link rel="stylesheet" type="text/css" href="assets/option1.css">
+	<link rel="stylesheet" type="text/css" href="assets/audio.css">
 </head>
 <body>
 	<header>
@@ -31,21 +32,47 @@
 	<main>
 		<section id="listen">
 			<h1>Listen & Read</h1>
-			<div class="third">
-				<span class="audio_heading">Stream the full 27 min piece</span>
-				<audio class="audio_track" controls>
+			<div class="audio_container">
+				<h2 class="audio_heading">Stream the full 27 min piece</h2>
+				<audio class="audio_track">
 					<source src="tracks/the_parking_space-single_track.mp3" type="audio/mpeg">
 				</audio>
+				<div id='full_audio_player' class='audio_player'>
+					<div class='play_pause_container'>
+						<img class='play' src="assets/play.svg">
+						<img class='pause' src="assets/pause.svg">
+					</div>
+					<div class='progress_bar_wrapper'>
+						<div class='progress_bar'>
+						</div>
+						<div class="time">
+							<span class='time_elapsed'>00:00</span>/<span class='total_time'>00:00</span>
+						</div>
+					</div>
+				</div>
 				<a class="mp3_download" href="">
 					<img src="assets/download.svg">
 					Download full piece
 				</a>
 			</div>
-			<div class="third">
-				<span class="audio_heading">Choose your own adventure</span>
-				<audio class="audio_track" controls>
+			<div class="audio_container">
+				<h2 class="audio_heading">Choose your own adventure</h2>
+				<audio class="audio_track">
 					<source src="tracks/418.mp3" type="audio/mpeg">
 				</audio>
+				<div id='full_audio_player' class='audio_player'>
+					<div class='play_pause_container'>
+						<img class='play' src="assets/play.svg">
+						<img class='pause' src="assets/pause.svg">
+					</div>
+					<div class='progress_bar_wrapper'>
+						<div class='progress_bar'>
+						</div>
+						<div class="time">
+							<span class='time_elapsed'>00:00</span>/<span class='total_time'>00:00</span>
+						</div>
+					</div>
+				</div>
 				<div id="track_select">
 					<button class='button selected'>start here</button>
 					<button class='button'>418</button>
@@ -64,10 +91,13 @@
 					Download album
 				</a>
 			</div>
-			<a class='third' id='print_download' href="">
-				<img src="assets/print_download.svg">
-				<span>Download the transcript of the piece</span>
-			</a>
+			<div class='audio_container'>
+				<h2 class="audio_heading">Download written transcript</h2>
+				<a id='print_download' href="">
+
+					<img src="assets/print_download.svg">
+					<span>Download the transcript of the piece</span>
+				</a>
 			</div>
 		</section>
 
@@ -197,5 +227,6 @@
 	</footer>
 
 	<script type="text/javascript" src="js/site.js"></script>
+	<script type="text/javascript" src="js/audio.js"></script>
 </body>
 </html>
