@@ -34,7 +34,7 @@
     right: 0.5rem;
     bottom: 0.5rem;
     border-radius: 0.5rem;
-    border: 2px solid #fff;
+    border: 3px solid #fff;
   }
 
   button.close_modal:hover{
@@ -50,6 +50,7 @@ body{
 	font-family: Dinish, sans-serif;
   color:  var(--blue);
   line-height: 1.1;
+  margin-top: 0;
 }
 
 header{
@@ -128,7 +129,7 @@ a{
   bottom:  0.5rem;
   right: 0.5rem;
   border-radius: 0.5rem;
-  border:  2px solid #fff;
+  border:  3px solid #fff;
 }
 
 .background{
@@ -140,7 +141,7 @@ a{
   color: #fff;
   width: 40%;
   text-align: left;
-  margin:  0rem 30% 1rem 30%;
+  margin:  0rem 30% 2rem 30%;
 }
 
 #header_info{
@@ -167,7 +168,37 @@ a{
   line-height: 1;
 }
 
-.nav_link.selected:after{
+body.section_1 .listen:after{
+  display: block; 
+}
+body.section_1 #figure{
+  left:  30%;
+  opacity: 1;
+}
+body.section_2 .image:after{
+  display: block; 
+}
+body.section_2 #figure{
+  left:  45%;
+  opacity: 1;
+}
+body.section_3 .about:after{
+  display: block; 
+}
+body.section_3 #figure{
+  left:  55%;
+  opacity: 1;
+}
+body.section_4 .survey:after{
+  display: block; 
+}
+body.section_4 #figure{
+  left:  68%;
+  opacity: 1;
+}
+
+.nav_link:after{
+  display: none;
   content: '';
   bottom:  0rem;
   width: 1rem;
@@ -205,9 +236,9 @@ a{
 }
 
 #figure{
+  opacity: 0;
   width:  3%;
   bottom:  50%;
-  left:  30%;
   transform:  translateX(-50%);
 }
 
@@ -219,8 +250,8 @@ a{
 }
 
 main{
-  margin-top:10rem;
-  margin-bottom:20rem;
+  margin-top:0;
+  margin-bottom:15rem;
   text-align: center;
 }
 
@@ -231,8 +262,9 @@ main section{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 10rem;
-  margin-bottom: 15vw;
+  margin-top: 0;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
 }
 
 .content_container{
@@ -279,6 +311,7 @@ main section{
   text-align: center;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: space-between;
   font-size: var(--m_font);
   margin-bottom: 2rem;
 }
@@ -336,7 +369,7 @@ main section{
   box-sizing: border-box;
   font-family: 'Dinish';
   color: var(--blue);
-  border: 2px solid var(--blue);
+  border: 3px solid var(--blue);
   font-size: var(--s_font);
 }
 
@@ -373,7 +406,7 @@ main section{
   border-radius: 1rem;
   padding-top:  1rem;
   padding-bottom:  1.2rem;
-  border: 2px solid var(--blue);
+  border: 3px solid var(--blue);
   color: var(--blue);
   width:  100%;
   margin: 0;
