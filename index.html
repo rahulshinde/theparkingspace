@@ -24,123 +24,156 @@
 				<img id='ground' src="assets/ground.svg">
 			</div>
 		</nav>
-		<button class='nav_button button background'>
-				<img src="assets/down.svg">
-			</button>
-
-			<button class='nav_button button background'>
-				<img src="assets/up.svg">
-			</button>
 		<div id='header_info' class="background">
 			The Parking Space is a site-specific listening experience that reimagines a humble parking ramp in downtown Iowa City* as a place of rest and perspective.
 		</div>
 	</header>
 	<main>
-		<div id="header_container">
-			<h1>The Parking Space</h1>
-		</div>
-
 		<section id="listen">
-			<h2>Listen & Read</h2>
-			<div class='content_container' id='audio'>
-				<h3>Audio</h3>
-				<div class="half">
-					<span class="audio_heading">Stream the full 27 min piece</span>
-					<audio class="audio_track" controls>
-						<source src="tracks/the_parking_space-single_track.mp3" type="audio/mpeg">
-					</audio>
-					<a class="mp3_download" href="">
-						<img src="assets/download.svg">
-						Download full piece.
-					</a>
-				</div>
-				<div class="half">
-					<span class="audio_heading">Choose your own adventure</span>
-					<audio class="audio_track" controls>
-						<source src="tracks/418.mp3" type="audio/mpeg">
-					</audio>
-					<div id="track_select">
-						<button class='button selected'>start here</button>
-						<button class='button'>418</button>
-						<button class='button'>444</button>
-						<button class='button'>427</button>
-						<button class='button'>451</button>
-						<button class='button'>480</button>
-						<button class='button'>515</button>
-						<button class='button'>502</button>
-						<button class='button'>the one that doesn’t exist</button>
-						<button class='button'>530</button>
-						<button class='button'>531</button>
-					</div>
-					<a class="mp3_download" href="">
-						<img src="assets/download.svg">
-						Download album
-					</a>
-				</div>
-			</div>
-			<div  class='content_container' id="written">
-				<h3>Written</h3>
-				
-				<a id='print_download' href="">
-					<img src="assets/print_download.svg">
-					<span>Download the transcript of the piece</span>
+			<h1>Listen & Read</h1>
+			<div class="third">
+				<span class="audio_heading">Stream the full 27 min piece</span>
+				<audio class="audio_track" controls>
+					<source src="tracks/the_parking_space-single_track.mp3" type="audio/mpeg">
+				</audio>
+				<a class="mp3_download" href="">
+					<img src="assets/download.svg">
+					Download full piece
 				</a>
+			</div>
+			<div class="third">
+				<span class="audio_heading">Choose your own adventure</span>
+				<audio class="audio_track" controls>
+					<source src="tracks/418.mp3" type="audio/mpeg">
+				</audio>
+				<div id="track_select">
+					<button class='button selected'>start here</button>
+					<button class='button'>418</button>
+					<button class='button'>444</button>
+					<button class='button'>427</button>
+					<button class='button'>451</button>
+					<button class='button'>480</button>
+					<button class='button'>515</button>
+					<button class='button'>502</button>
+					<button class='button'>the one that doesn’t exist</button>
+					<button class='button'>530</button>
+					<button class='button'>531</button>
+				</div>
+				<a class="mp3_download" href="">
+					<img src="assets/download.svg">
+					Download album
+				</a>
+			</div>
+			<a class='third' id='print_download' href="">
+				<img src="assets/print_download.svg">
+				<span>Download the transcript of the piece</span>
+			</a>
 			</div>
 		</section>
 
 		<section id="image">
-			<h2>Image & Video</h2>
-			<a href='visual/360.mp4' class='image_link third'>
-				A 360 degree video of the top two levels of the parking space. 
-			</a>
+			<h1>Image & Video</h1>
+			<div class='image_link third'>
+				<button class="open_image">1</button>
+				<div class="image_container">
+					<div class="image_inner_container">
+						<video controls>
+							<source src="visual/360.mp4" type="video/mp4">	
+						</video>
+					</div>
+					<span class="description">
+						<button class='close_modal'>Close</button>
+						A 360 degree video of the top two levels of the parking space.
+					</span>
+				</div>	
+			</div>
 
-			<a href='visual/banging_on_wires.mp4' class='image_link third'>
-				A video looking up at the metal wires that act as barriers around the edges of the building. Stephanie bangs on these wires creating different low vibrations.
-			</a>
+			<div class='image_link third'>
+				<button class="open_image">2</button>
+				<div class="image_container">
+					<div class="image_inner_container">
+						<video controls>
+							<source src="visual/banging_on_wires.mp4" type="video/mp4">	
+						</video>
+					</div>
+					<span class="description">
+						<button class='close_modal'>Close</button>
+						A video looking up at the metal wires that act as barriers around the edges of the building. Stephanie bangs on these wires creating different low vibrations.
+					</span>
+				</div>	
+			</div>
 
-			<a href='visual/building.mp4' class='image_link third'>
-				A video showing the facade of the parking space. There is a lot of wind in this video.
-			</a>
+			<div class='image_link third'>
+				<button class="open_image">3</button>
+				<div class="image_container">
+					<div class="image_inner_container">
+						<video controls>
+							<source src="visual/building.mp4" type="video/mp4">	
+						</video>
+					</div>
+					<span class="description">
+						<button class='close_modal'>Close</button>
+						A video showing the facade of the parking space. There is a lot of wind in this video.
+					</span>
+				</div>	
+			</div>
 
-			<a href='visual/buy_a_ticket.jpg' class='image_link third'>
-				An image taken on a stairwell looking down on the ticket machines that can be used to purchase a parking ticket. The view of the machine is partially obscured by a bright blue metal beam that runs in a diagonal from the bottom left of the photo to the top right.
-			</a>
+			<div class='image_link third'>
+				<button class="open_image">4</button>
+				<div class="image_container">
+					<div class="image_inner_container">
+						<img src="visual/buy_a_ticket.jpg">
+					</div>
+					<span class="description">
+						<button class='close_modal'>Close</button>
+					An image taken on a stairwell looking down on the ticket machines that can be used to purchase a parking ticket. The view of the machine is partially obscured by a bright blue metal beam that runs in a diagonal from the bottom left of the photo to the top right.</span>
+				</div>	
+			</div>
 
-			<a href='visual/light.jpg' class='image_link third'>
-				An image of a horizontal florecant light fixture mounted on the wall of the stairwell. It is close to the corner of the wall which is painted in a teal blue.
-			</a>
+			<div class='image_link third'>
+				<button class="open_image">5</button>
+				<div class="image_container">
+					<div class="image_inner_container">
+						<img src="visual/light.jpg">
+					</div>
+					<span class="description">
+						<button class='close_modal'>Close</button>
+						An image of a horizontal florecant light fixture mounted on the wall of the stairwell. It is close to the corner of the wall which is painted in a teal blue.
+					</span>
+				</div>	
+			</div>
 
-			<a href='visual/view_over_railing.jpg' class='image_link third'>
-				An image taken from the top level of the parking lot. The foreground is in focus while the background is blurry. The blurry background contains a view of the street, in which there is a bus picking up riders.
-			</a>
+			<div class='image_link third'>
+				<button class="open_image">6</button>
+				<div class="image_container">
+					<div class="image_inner_container">
+						<img src="visual/view_over_railing.jpg">
+					</div>
+					<span class="description">
+						<button class='close_modal'>Close</button>
+						An image taken from the top level of the parking lot. The foreground is in focus while the background is blurry. The blurry background contains a view of the street, in which there is a bus picking up riders.</span>
+				</div>	
+			</div>
 		</section>
 
 		<section id="about">
-			<h2>About & Location</h2>
-			<div class="blue_background third" id='location_wrapper'>
+			<h1>About & Location</h1>
+			<div class="blue_background" id='location_wrapper'>
 				<img src="assets/location.svg">
 				Chauncey Swan Parking Ramp <br> 415 E. Washington
 			</div>
 
-			<div class="blue_background third">
+			<div class="blue_background">
 				 You may walk, bike, or drive to the parking ramp. Having a car is not necessary for the experience. If you drive, we recommend you park your car on the Levels 1, 2, or 3. Parking is  $0.75 an hour. The space is wheelchair accessible.
 			</div>
 
-			<div class="blue_background third">
+			<div class="blue_background">
 				We acknowledge the land known as Iowa City belongs to the indigenous people of the Sac and Fox of the Iowa in Mississippi, Kickapoo, Omaha, Sioux, Otoe, Iowa, Ponca, Winnebago, Menomiee, Osage, Potawatomi, Ottawa, Missouri. We invite you to consider what your understanding of "public space" means as you listen.
-			</div>
-
-			<div class="blue_background third">
-			Created in collaboration by
-			Steven Willis, Stephanie Miracle, and Ramin Roshandel
-			</div>
-			<div class='blue_background third'>
-				Site by Rahul & Rush
 			</div>
 		</section>
 		
 		<section id="survey">
-			<h2>Survey & Feedback</h2>
+			<h1>Survey & Feedback</h1>
 			<div class="content_container third">
 				<a href="">Let us know about your experience by taking this short survey</a>	
 			</div>
@@ -150,6 +183,19 @@
 		</section>
 	</main>
 
-	<script type="text/javascript" src="js/player.js"></script>
+	<footer>
+		<div class="open_image">
+			Created in collaboration by
+			Steven Willis, Stephanie Miracle, and Ramin Roshandel
+			</div>
+			<div class="spacer">
+				|
+			</div>
+			<div class=''>
+				Site by Rahul & Rush
+			</div>
+	</footer>
+
+	<script type="text/javascript" src="js/site.js"></script>
 </body>
 </html>
