@@ -80,8 +80,7 @@ h1{
 }
 
 h2{
-  font-size: var(--s_font);
-  text-transform: uppercase;
+  font-size: var(--m_font);
   margin: 2rem 0;
 }
 
