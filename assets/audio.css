@@ -11,6 +11,10 @@
   margin:  0rem 25% 6rem 25%;
 }
 
+.print_download_container{
+  margin-bottom: 0;
+}
+
 .audio_player{
 	width: 100%;
 	display: flex;
@@ -118,5 +122,16 @@
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+@media (max-width: 600px){
+  .play_pause_container img{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .progress_bar_wrapper{
+    height: 1.5rem;
+    width: calc(100% - 2rem);
   }
 }
