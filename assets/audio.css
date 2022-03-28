@@ -112,3 +112,11 @@
   height: 1.5rem;
   margin-right: 1rem;
 }
+
+@media (max-width: 1000px){
+  .audio_container{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

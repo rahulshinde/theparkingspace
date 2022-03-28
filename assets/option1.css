@@ -80,7 +80,7 @@ h1{
 }
 
 h2{
-  font-size: var(--m_font);
+  font-size: var(--ms_font);
   margin: 2rem 0;
 }
 
@@ -105,7 +105,6 @@ a{
 #main_nav{
   display: flex;
   align-items: center;
-  margin-left: 4rem;
 }
 #nav_link_container{
   display: flex;
@@ -138,13 +137,12 @@ a{
 .blue_background{
   background-color: var(--blue);
   color: #fff;
-  width: 40%;
+  width: 50%;
   text-align: left;
-  margin:  0rem 30% 2rem 30%;
+  margin:  0rem 25% 2rem 25%;
 }
 
 #header_info{
-  margin-left: 2rem;
   max-width: 20rem;
   font-size: var(--s_font);
 }
@@ -237,7 +235,7 @@ body.section_4 #figure{
 #figure{
   opacity: 0;
   width:  3%;
-  bottom:  50%;
+  bottom:  3vw;
   transform:  translateX(-50%);
 }
 
@@ -311,14 +309,14 @@ main section{
   text-align: center;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   font-size: var(--m_font);
   margin-bottom: 2rem;
 }
 
 #location_wrapper img{
   margin-left:  1rem;
-  margin-right:  0.5rem;
+  margin-right:  2rem;
   height:  3rem;
 }
 
@@ -474,4 +472,23 @@ footer{
 
 audio::-webkit-media-controls-panel{
   color: var(--blue);
+}
+
+@media (max-width: 1000px){
+  .blue_background{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .nav_link{
+    width: 4rem;
+  }
+}
+
+@media (max-width: 767px){
+  .blue_background{
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
 }
