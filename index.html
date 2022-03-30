@@ -5,18 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>The Parking Space</title>
 	<link rel="stylesheet" type="text/css" href="assets/option1.css">
+	<link rel="stylesheet" type="text/css" href="assets/header.css">
 	<link rel="stylesheet" type="text/css" href="assets/audio.css">
 </head>
 <body>
 	<header>
-		<div id='logo' class="background">
+		<div id='logo'>
 			<img src="assets/logo.svg">
 		</div>
 		<nav id="main_nav">
-			<div id="nav_link_container"class='background'>
+			<div id="nav_link_container">
 				<a class='nav_link listen' href="#listen">Listen & Read</a>
 				<a class='nav_link image' href="#image">Images & Video</a>
-				<a class='nav_link about' href="#about">About & Location</a>
+				<a class='nav_link about' href="#about">Location & Access</a>
 				<a class='nav_link survey' href="#survey">Survey & Feedback</a>
 			</div>
 
@@ -25,15 +26,41 @@
 				<img id='ground' src="assets/ground.svg">
 			</div>
 		</nav>
-		<div id='header_info' class="background">
+		<a href='https://goo.gl/maps/1FVXJU8tsTcya1Wg6' class="blue_background location" id='header_location_wrapper'>
+			<svg version="1.1" id="location" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
+			<style type="text/css">
+				.st0{fill:transparent;}
+				.st1{fill:#ffffff;}
+			</style>
+			<g id="ZG0D5C.tif_00000157279642305358141550000014550182550694504894_">
+				<g>
+					<path class="st1" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6
+						c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4
+						c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z M176.4,113.7c2-30.7-22.2-56.3-52.3-56.4c-28.6-0.1-52.8,23.8-52.8,52.2
+						c-0.1,31.2,26,56.1,57.2,53.3C154.2,160.5,174.8,139.5,176.4,113.7z"/>
+				</g>
+			</g>
+			</svg>
+
+			Chauncey Swan Parking Ramp <br> 415 E. Washington
+		</a>
+		<div id='header_info'>
 			The Parking Space is a site-specific listening experience that reimagines a humble parking ramp in downtown Iowa City* as a place of rest and perspective.
 		</div>
 	</header>
 	<main>
+		<div>
+			<h1>The Parking Space</h1>
+			<div id='headphone_notification'>
+				<img src="assets/headphones.svg">
+				This piece is best experienced using headphones
+			</div>
+		</div>
+			
 		<section id="listen">
-			<h1>Listen & Read</h1>
+			<h2>Listen & Read</h2>
 			<div class="audio_container">
-				<h2 class="audio_heading">Stream the full 27 min piece</h2>
+				<h3 class="audio_heading">Stream the full 27 min piece</h3>
 				<audio class="audio_track">
 					<source src="tracks/the_parking_space-single_track.mp3" type="audio/mpeg">
 				</audio>
@@ -55,7 +82,7 @@
 				</div>
 			</div>
 			<div class="audio_container">
-				<h2 class="audio_heading">Choose your own adventure</h2>
+				<h3 class="audio_heading">Choose your own adventure</h3>
 				<div id="track_select">
 					<button class='text button selected'>start here</button>
 					<button class='button'>418</button>
@@ -91,14 +118,14 @@
 			</div>
 			<div class='audio_container print_download_container'>
 				<a id='print_download' href="">
-					<h2 class="audio_heading">Download written transcript</h2>
+					<h3 class="audio_heading">Download written transcript</h3>
 					<img src="assets/print_download.svg">
 				</a>
 			</div>
 		</section>
 
 		<section id="image">
-			<h1>Image & Video</h1>
+			<h2>Image & Video</h2>
 			<div class='image_link third'>
 				<button class="open_image">1</button>
 				<div class="image_container">
@@ -183,12 +210,7 @@
 		</section>
 
 		<section id="about">
-			<h1>About & Location</h1>
-			<div class="blue_background" id='location_wrapper'>
-				<img src="assets/location.svg">
-				Chauncey Swan Parking Ramp <br> 415 E. Washington
-			</div>
-
+			<h2>Location & Access</h2>
 			<div class="blue_background">
 				 You may walk, bike, or drive to the parking ramp. Having a car is not necessary for the experience. If you drive, we recommend you park your car on the Levels 1, 2, or 3. Parking is  $0.75 an hour. The space is wheelchair accessible.
 			</div>
@@ -199,11 +221,11 @@
 		</section>
 		
 		<section id="survey">
-			<h1>Survey & Feedback</h1>
-			<div class="content_container third">
+			<h2>Survey & Feedback</h2>
+			<div class="content_container">
 				<a href="">Let us know about your experience by taking this short survey</a>	
 			</div>
-			<div class="content_container third">
+			<div class="content_container">
 				If you are on instagram take a picture and tag us: <a href="">@the_parking_space</a>
 			</div>
 		</section>
