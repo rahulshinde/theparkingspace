@@ -12,9 +12,10 @@
 
 :root {
   --blue: #2760FF;
-  --l_font: 4rem;
-  --m_font: 1.25rem;
-  --s_font: 0.9rem;
+  --l_font: 3rem;
+  --m_font: 1rem;
+  --s_font: 0.75rem;
+  --outer_margin:  2rem;
 }
 
 
@@ -62,7 +63,7 @@ h3{
 h1{
   font-size: var(--m_font);
   letter-spacing: 0.5rem;
-  margin-top: 5rem;
+  margin-top: 3.5rem;
   text-transform: uppercase;
 }
 
@@ -90,8 +91,9 @@ a{
 
 .background,
 .blue_background{
-  padding:  1.5rem;
+  padding:  2rem 4rem;
   border-radius: 1rem;
+  line-height: 1.3;
   box-sizing: border-box;
   position: relative;
 }
@@ -123,28 +125,28 @@ body.section_1 .listen:after{
   display: block; 
 }
 body.section_1 #figure{
-  left:  35%;
+  left:  38%;
   opacity: 1;
 }
 body.section_2 .image:after{
   display: block; 
 }
 body.section_2 #figure{
-  left:  45%;
+  left:  47%;
   opacity: 1;
 }
 body.section_3 .about:after{
   display: block; 
 }
 body.section_3 #figure{
-  left:  55%;
+  left:  54%;
   opacity: 1;
 }
 body.section_4 .survey:after{
   display: block; 
 }
 body.section_4 #figure{
-  left:  65%;
+  left:  62%;
   opacity: 1;
 }
 
@@ -157,13 +159,13 @@ main{
 main section{
   box-sizing: border-box;
   width: auto;
-  margin-left: 28rem;
-  margin-right: 28rem;
+  margin-left: 25rem;
+  margin-right: 25rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 0;
-  padding-top: 15rem;
+  padding-top: 8rem;
   padding-bottom: 5rem;
 }
 

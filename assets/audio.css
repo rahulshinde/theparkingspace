@@ -23,8 +23,8 @@
 }
 
 .play_pause_container img{
-	width: 4rem;
-	height: 4rem;
+	width: 2rem;
+	height: 2rem;
 }
 .pause {
 	display: none;
@@ -32,8 +32,8 @@
 
 .progress_bar_wrapper{
 	position: relative;
-	height: 4rem;
-	width: calc(100% - 6rem);
+	height: 2rem;
+	width: calc(100% - 3rem);
 	box-sizing: border-box;
 	border: 5px solid;
 	border-top: none;
