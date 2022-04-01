@@ -34,13 +34,9 @@
 
 
 header{
-  position: fixed;
-  z-index: 10;
-  box-sizing: border-box;
-  top: 0;
-  padding: var(--outer_margin);
   padding-bottom: 0;
   display: flex;
+  z-index: 10;
   width: 100%;
   align-items: flex-start;
   justify-content: space-between;
@@ -63,6 +59,10 @@ header{
 }
 
 #header_location_wrapper{
+  position: fixed;
+  z-index: 2;
+  top: var(--outer_margin);
+  right: var(--outer_margin);
   padding: 1.5rem;
   width: 20rem;
   text-decoration: none;
@@ -91,6 +91,7 @@ header{
 #logo,
 #header_info{
   position: fixed;
+  z-index: 3;
   bottom: var(--outer_margin);
 }
 
@@ -99,6 +100,7 @@ header{
 }
 
 #header_info{
+  text-align: left;
   right: var(--outer_margin);
 }
 
@@ -108,6 +110,10 @@ header{
 
 #main_nav{
   display: flex;
+  z-index: 2;
+  position: fixed;
+  top: var(--outer_margin);
+  left: var(--outer_margin);
   align-items: center;
 }
 #nav_link_container{
@@ -164,11 +170,10 @@ header{
 
 #ground_container{
   position: fixed;
-  bottom:  4rem;
-  left:  0;
-  width:  100%;
+  bottom:  3.9rem;
+  left:  20rem;
+  right: 20rem;
   box-sizing: border-box;
-  padding:  3rem;
 }
 
 #figure,
@@ -185,44 +190,59 @@ header{
 
 #ground{
   z-index: -1;
-  left:  20rem;
-  right:  20rem;
+  width: 100%;
   bottom:  0;
 }
 
-@media (max-width: 900px){
-  header{
-    position: static;
-  }
-
-  #logo,
+@media (max-width: 1200px){
   #main_nav{
-    position: fixed;
-    z-index: 10;
-  }
-  #logo{
-    top: 1rem;
-    left: 2rem;
-  }
-
-  #main_nav{
-    top: 1rem;
-    right: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    top: calc(var(--outer_margin) - 1rem);
+    left: calc(var(--outer_margin) - 1rem);
   }
 
   #header_info{
-    font-size: var(--m_font);
-    text-align: center;
-    padding-top: 15rem;
-    max-width: 30rem;
-    padding-bottom: 0rem;
+    display: none;
+  }
+
+  #headphone_notification{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #ground_container{
+    bottom:  var(--outer_margin);
+    left: 10rem;
+    right: 10rem;
+  }
+  #ground_container:after{
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+    z-index: -2;
+    background-color: #fff;
+  }
+  #figure{
+    width: 1.5rem;
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 1000px){
+  #figure{
+    width: 1rem;
+  }
+}
+
+@media (max-width: 767px){
   header{
     padding-left: 0;
     padding-right: 0;
+    justify-content: center;
   }
   #logo{
     top: auto;
@@ -233,19 +253,51 @@ header{
   }
 
   #main_nav{
-    right: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 1rem;
+    background-color: #fff;
+    left: 50%;
     top: 0;
-    transform: translateX(50%);
+    transform: translateX(-50%);
+  }
+
+  #header_location_wrapper{
+    position: relative;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    right: auto;
   }
 
   #ground_container{
+    position: static;
     bottom: -3rem;
-    padding-bottom: 0.5rem;
+    left: 0;
+    right: 0;
+    padding-bottom: 0;
     background-color: #fff;
     z-index: 1;
   }
 
-  #main_nav,
+  #ground_container:after{
+    display: none;
+  }
+
+  #figure{
+    width: 0.8rem;
+    bottom: 1.5rem;
+  }
+
+  #ground{
+    margin-top: 1rem;
+    width: calc(100% + 6rem);
+    display: block;
+    position: relative;
+    left: -3rem;
+  }
   #nav_link_container{
     padding: 0;
     z-index: 2;
