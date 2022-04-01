@@ -255,7 +255,7 @@ header{
   #main_nav{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 100%;
     padding-top: 1rem;
     background-color: #fff;
     left: 50%;
@@ -292,11 +292,10 @@ header{
   }
 
   #ground{
-    margin-top: 1rem;
-    width: calc(100% + 6rem);
+    margin-top: 2rem;
+    width: 100%;
     display: block;
     position: relative;
-    left: -3rem;
   }
   #nav_link_container{
     padding: 0;
