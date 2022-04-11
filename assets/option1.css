@@ -6,7 +6,13 @@
 
 @font-face {
   font-family: "Roundaway Gothic";
-  src: url("../fonts/RJSRoundawayGothicBeta.otf");
+  src: url("../fonts/RJSRoundawayGothic.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roundaway Stencil";
+  src: url("../fonts/RJSRoundawayStencil.otf");
   font-weight: 400;
 }
 
@@ -239,7 +245,7 @@ main section{
 }
 .image_link button{
   position: relative;
-  font-family: 'Roundaway Gothic';
+  font-family: 'Roundaway Stencil';
   text-align: center;
   background-color: #fff;
   border-radius: 1rem;
