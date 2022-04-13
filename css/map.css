@@ -1,0 +1,501 @@
+@keyframes blink{
+  0%{
+    opacity: 1;
+  }
+  24%{
+    opacity: 1;
+  }
+  25%{
+    opacity: 0;
+  }
+  74%{
+    opacity: 0;
+  }
+  75%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+#interaction_notification{
+	position: fixed;
+	display: flex;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 4rem;
+	font-size: var(--s_font);
+}
+
+#map_location{
+	background-color: black;
+	opacity: 1;
+	padding: 1.5rem;
+	padding-left: 2rem;
+	height: 5.75rem;
+	font-family: 'Roundaway Gothic';
+}
+#map_location svg{
+	height: 2.5rem;
+	margin-right: 1rem;
+}
+
+#map_location span{
+	flex-grow: 1;
+	text-align: center;
+}
+
+#interaction_notification img{
+	width: 1.25rem;
+	animation: blink 1.5s linear infinite;
+	margin-right: 1rem;
+}
+#interaction_notification span{
+	width: 15rem;
+	text-align: center;
+}
+
+#map_navigation{
+	display: flex;
+	width: 100%;
+}
+
+#map_container{
+	position: fixed;
+	top: 13rem;
+	left: 20rem;
+	right: 20rem;
+	bottom: 10rem;
+	border-radius: 2rem;
+	/*background-color: #f2eb68;*/
+	z-index: 10;
+}
+
+/* Icons */
+
+.icon{
+	position: absolute;
+	opacity: 0;
+	width: 3rem;
+	z-index: 12;
+	pointer-events: none;
+	filter: grayscale(100%) brightness(0);
+}
+
+#parking{
+	width: 16rem;
+	bottom: 4rem;
+	left: 2rem;
+}
+
+#icon-1{
+	width: 10rem;
+	bottom: 2rem;
+	right: -1rem;
+}
+
+#icon-2{
+	width: 7rem;
+	top: 2rem;
+	right: 2rem;
+}
+
+#icon-3{
+	width: 8rem;
+	bottom: 2rem;
+	left: 2rem;
+}
+
+#icon-4,
+#icon-10{
+	width: 15rem;
+	top: 4rem;
+}
+
+#icon-4{
+	left: -2rem;x
+}
+
+#icon-5{
+	width: 10rem;
+	bottom: 2rem;
+	left: 2rem;
+}
+
+#icon-6{
+	width: 3.45rem;
+	top: 2rem;
+	left: 2rem;
+}
+
+
+#icon-7{
+	width: 12rem;
+	bottom: 3rem;
+	left: -3rem;
+}
+
+#icon-8{
+	width: 10rem;
+	bottom: 3rem;
+	left: 0;
+}
+
+#icon-9{
+	width: 15rem;
+	bottom: 3rem;
+	right: 1rem;
+}
+
+/* Markers */
+
+#marker_1{
+	top: 20%;
+	left: 50%;
+}
+
+#marker_2{
+	top: 40%;
+	left: 30%;
+}
+
+#marker_3{
+	top: 35%;
+	left: 35%;
+}
+
+#marker_4{
+	bottom: 20%;
+	left: 10%;
+}
+
+#marker_5{
+	top: 55%;
+	left: 35%;
+}
+
+#marker_6{
+	top: 63%;
+	left: 70%;
+}
+
+#marker_7{
+	top: 29%;
+	left: 69%;
+}
+
+#marker_8{
+	top: 10%;
+	left: 58%;
+}
+
+#marker_9{
+	top: 20%;
+	left: 15%;
+}
+
+#marker_10{
+	bottom: 20%;
+	left: 5%;
+}
+
+#the_parking_space{
+	top: 40%;
+	left: 75%;
+}
+
+.marker:hover svg,
+.marker:hover img,
+.marker:focus svg,
+.marker:focus img{
+	filter: grayscale(0%) brightness(1) !important;
+}
+
+.marker:hover .map_link,
+.marker:focus-visible .map_link,
+.marker:hover .icon,
+.marker:focus-visible .icon{
+	opacity: 1;
+}
+
+.marker{
+	position: absolute;
+	z-index: 3;
+}
+
+.marker .marker_number{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	text-align: center;
+	transform: translate(-55%, -80%);
+	font-family: 'Roundaway Stencil';
+	font-size: 1.25rem;
+	color: #fff;
+	z-index: 2;
+}
+
+.marker svg{
+	width: 1.75rem;
+	filter: grayscale(100%) brightness(0);
+}
+
+#logo{
+	width: 2.75rem;
+	filter: grayscale(100%) contrast(100);
+}
+
+#clinton{
+	height: 100%;
+	left: 20%;
+	top: 0;
+}
+
+#clinton img{
+	bottom: 40%;
+	width: 75%;
+}
+
+#dubuque{
+	height: 37%;
+	left: 35%;
+	bottom: 0;
+}
+
+#dubuque img{
+	bottom: 10%;
+}
+
+#linn{
+	height: 100%;
+	left: 50%;
+	top: 0;
+}
+
+#linn img{
+	bottom: 10%;
+}
+
+#gilbert{
+	height: 100%;
+	left: 66%;
+	top: 0;
+	z-index: 2;
+}
+
+#gilbert img{
+	top: 15%;
+}
+
+#iowa_ave{
+	width: 70%;
+	left: 20%;
+	top: 13%;
+}
+
+#iowa_ave img{
+	bottom: 10%;
+}
+
+#washington{
+	width: 100%;
+	left: 0%;
+	top: 30%;
+}
+
+#washington img{
+	right: 1%;
+}
+
+#college{
+	width: 50%;
+	left: 50%;
+	top: 52%;
+}
+
+#college img{
+	right: 5%;
+}
+
+#burlington{
+	width: 100%;
+	left: 0%;
+	top: 73%;
+}
+
+#burlington img{
+	bottom: 10%;
+}
+
+.streetv{
+	width: 1rem;
+	transform:  translateX(-50%);
+}
+
+.streetv img{
+	left: 15%;
+	width: 75%;
+}
+
+.streeth{
+	transform:  translateY(-50%);
+	height: 1rem;
+}
+
+.streeth img{
+	top: 15%;
+	height: 75%;
+}
+
+.street{
+	position: absolute;
+	background-size: contain;
+	background-color: #eee;
+	z-index: 1;
+}
+
+.street img{
+	position: absolute;
+	filter: grayscale(100%) contrast(100) brightness(0);
+}
+
+/* Generic Page Styles */
+
+body{
+}
+
+h1{
+	font-family: 'Roundaway Gothic';
+	letter-spacing: 0;
+	font-size: 2.5rem;
+	box-sizing: border-box;
+	position: fixed;
+	text-align: center;
+	color: #000;
+	top: var(--outer_margin);
+	line-height: 0.8;
+	margin-top: 0;
+	width: auto;
+	left: var(--outer_margin);
+	margin-bottom: 0;
+	z-index: 10;
+}
+main{
+	width: 16rem;
+	margin-top: 8rem;
+	margin-left: calc(100% - 22rem);
+	margin-right: auto;
+}
+
+#site_credits{
+
+}
+
+/* Main navigation  */
+
+#main_nav{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.map_link{
+	opacity: 0;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	top: var(--outer_margin);
+	right: var(--outer_margin);
+	pointer-events: none;
+	padding:  1rem;
+	width: 20rem;
+	padding-left: 2rem;
+  border-radius: 1rem;
+  line-height: 1.3;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+}
+
+.title_author_container{
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	margin-left: 1rem;
+	flex-direction: column;
+}
+
+.map_link .number{
+	font-family: 'Roundaway Stencil';
+	font-size: var(--l_font);
+}
+
+.map_link .title{
+  font-family: 'Roundaway Gothic';
+  font-size: var(--m_font);
+  line-height: 1;
+}
+
+.map_link .author{
+	margin-top: 0.25rem;
+	font-size: var(--s_font);
+}
+
+.map_link:after{
+  content:  '';
+  position: absolute;
+  top:  0.5rem;
+  left:  0.5rem;
+  bottom:  0.5rem;
+  right: 0.5rem;
+  border-radius: 0.5rem;
+  border:  3px solid #fff;
+}
+
+#link_parking_space{
+	background-color: var(--blue);
+}
+
+#link_1{
+	background-color: #d8167b;
+}
+
+#link_2{
+	background-color: #88051d;
+}
+
+#link_3{
+	background-color: #8dc63f;
+}
+
+#link_4{
+	background-color: #f46e24;
+}
+
+#link_5{
+	background-color: #a747dd;
+}
+
+#link_6{
+	background-color: #00a77f;
+}
+
+#link_7{
+	background-color: #ff7c59;
+}
+
+#link_8{
+	background-color: #2ec1ff;
+}
+
+#link_9{
+	background-color: #fe0000;
+}
+
+#link_10{
+	background-color: #00e77b;
+}
