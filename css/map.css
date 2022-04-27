@@ -138,68 +138,68 @@ body.section_3 .access:after{
 /* Markers */
 
 
-#marker_1{
+.marker_1{
 	bottom: 20%;
 	left: 10%;
 	outline-color: #841A5E;
 }
 
-#marker_2{
+.marker_2{
 	bottom: 20%;
 	left: 15%;
 	outline-color: #E700C1;
 }
 
-#marker_3{
+.marker_3{
 	top: 11%;
 	left: 21%;
 	outline-color: #DAA520;
 }
 
-#marker_4{
+.marker_4{
 	top: 40%;
 	left: 35%;
 	outline-color: #00D5FF;
 }
 
-#marker_5{
+.marker_5{
 	top: 44%;
 	left: 30%;
 	outline-color: #F46E24;
 }
 
-#marker_6{
+.marker_6{
 	top: 60%;
 	left: 37%;
 	outline-color: #0D7236;
 
 }
 
-#marker_7{
+.marker_7{
 	top: 26%;
 	left: 50%;
 	outline-color: #F94963;
 }
 
-#marker_8{
+.marker_8{
 	top: 15%;
 	left: 50%;
 	outline-color: #25a7a3;
 }
 
-#marker_9{
+.marker_9{
 	top: 37%;
 	left: 67%;
 	outline-color: #83D362;
 }
 
-#marker_10{
+.marker_10{
 	top: 47%;
 	left: 82%;
 	outline-color: #AF6EF9;
 }
 
-#the_parking_space{
+.the_parking_space{
 	top: 44%;
 	left: 73%;
 	outline-color: var(--blue);
@@ -236,12 +236,16 @@ body.section_3 .access:after{
 	z-index: 2;
 }
 
+.tablet_marker{
+	display: none;
+}
+
 .marker svg{
 	width: 2rem;
 	filter: grayscale(100%) brightness(0);
 }
 
-#logo{
+.logo{
 	width: 3rem;
 	filter: grayscale(100%) contrast(100);
 }
@@ -379,10 +383,6 @@ body.section_3 .access:after{
 
 header{
 	height: 0;
-}
-
-main{
-	margin-bottom: 10rem;
 }
 
 h1{
@@ -677,4 +677,97 @@ h1{
 
 #site_credits{
 	font-size: var(--s_font);
+}
+
+@media (max-width: 1000px), (hover: none){
+	.marker.tablet_marker{
+		display: block;
+		position: absolute;
+	}
+	.marker.tablet_marker.black_type .marker_number{
+		color: black;
+	}
+	.marker.tablet_marker svg{
+		filter: grayscale(0);
+	}
+	.marker.tablet_marker .logo{
+		filter: grayscale(0);
+	}
+	.marker{
+		position: static;
+	}
+
+	#map_container{
+		position: static;
+		height: auto;
+	}
+
+	#interaction_notification{
+		display: none;
+	}
+
+	.tablet_markers_container,
+	.streets_container{
+		position: absolute;
+		top: 15rem;
+		height: 30rem;
+		width: calc(100% - var(--outer_margin) * 2);
+	}
+
+	.map_links_container{
+		display: flex;
+		flex-wrap: wrap;		
+		margin-top: 35rem;
+	}
+
+	.map_links_container .marker{
+		width: 33.33%;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		position: relative;
+		bottom: auto;
+		left: auto;
+		margin-bottom: var(--outer_margin);
+		text-decoration: none;
+	}
+
+	.map_links_container .logo{
+		width: 2.2rem;
+	}
+
+	.map_links_container .logo,
+	.map_links_container .marker_pin{
+		margin-left: 1rem;
+		filter: none;
+	}
+
+	.map_links_container .marker_number{
+		left: 2.5rem;
+	}
+
+	.map_links_container .black_type .marker_number{
+		color: #000;
+	}
+
+	.map_links_container .map_link{
+		display: block;
+		width: calc(100% - 5rem);
+		opacity: 1;
+		position: relative;
+		left: auto;
+		bottom: auto;
+	}
+
+	.map_links_container .number,
+	.map_links_container .icon{
+		display: none;
+	}
+
+	.contributor{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		padding: 0;
+	}
 }

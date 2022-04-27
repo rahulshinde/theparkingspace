@@ -46,6 +46,10 @@ body{
   margin: 0;
 }
 
+main{
+  margin-bottom: 10rem;
+}
+
 section{
 	margin-left: 20rem;
 	margin-right: 20rem;
@@ -70,7 +74,7 @@ footer{
   margin-right: 1rem;
 }
 
-#header_info{
+#footer_info{
 	padding: 1rem;
   width: 15rem;
   font-size: var(--s_font);
@@ -132,6 +136,7 @@ a{
   display: flex;
   z-index: 2;
   position: fixed;
+  z-index: 10;
   top: var(--outer_margin);
   right: var(--outer_margin);
   align-items: center;
@@ -246,5 +251,26 @@ a{
 @media (max-width: 1280px){
   html{
     font-size: 14px;
+  }
+}
+
+@media (max-width: 1000px), (hover: none){
+  main{
+    margin-bottom: 8rem;
+  }
+
+  footer{
+    position: relative;
+  }
+
+
+  section{
+    margin-left: var(--outer_margin);
+    margin-right: var(--outer_margin);
+  }
+
+  #footer_info,
+  #map_location{
+    position: absolute;
   }
 }
