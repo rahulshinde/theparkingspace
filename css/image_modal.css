@@ -159,3 +159,30 @@ button.close_modal:after{
   right: 0%;
   transform: translate(0%, -50%);
 }
+body{
+  background-color: white;
+}
+
+@media (max-width: 1000px){
+  .image_container{
+    flex-direction: column;
+  }
+
+  .image_container .image_inner_container{
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .image_link.open .image_container:after{
+    display: none;
+  }
+
+  .image_link.open .image_container{
+    border-radius: 0;
+    padding: var(--outer_margin);
+  }
+
+  .description{
+    max-width: 100%;
+  }
+}
