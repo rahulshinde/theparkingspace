@@ -76,7 +76,7 @@ body.section_3 .access:after{
 	background-color: black;
 	opacity: 1;
 	padding: 1.5rem;
-	z-index: 4;
+	z-index: 2;
 	width: 15rem;
 	height: 5.75rem;
 	pointer-events: auto;
@@ -738,9 +738,32 @@ h1{
 		bottom: auto;
 	}
 
-	.map_links_container .number,
+	
 	.map_links_container .icon{
 		display: none;
+	}
+
+	.map_link .number{
+		position: static;
+		display: inline-block;
+		padding: 0;
+		width: 100%;
+		background-color: transparent;
+		color: #fff !important;
+		line-height: 1;
+	}
+
+	.title:before{
+		content: '@ ';
+	}
+
+	.map_link .number .author{
+		display: block;
+		margin-top: 0.5rem;
+	}
+
+	.black_type .number{
+		color: #000 !important;
 	}
 
 	.contributor{
@@ -748,6 +771,7 @@ h1{
 		margin-left: 10%;
 		margin-right: 10%;
 		padding: 0;
+		margin-bottom: 2rem;
 	}
 }
 
@@ -773,5 +797,11 @@ h1{
 
 	.map_links_container .map_link{
 		width: 100%;
+	}
+
+	.contributor{
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
 	}
 }
