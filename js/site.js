@@ -73,20 +73,3 @@ function calculateSectionPositions(){
 
   scrollHandler();
 }
-
-
-document.querySelector('#building').addEventListener('scroll', function(){
-  var top = this.scrollTop;
-  var bottom = top+this.offsetHeight;
-  var arr = [];
-  
-  this.querySelectorAll("div").forEach(function(div){
-    if (
-      (div.offsetTop < top && top <div.offsetTop+div.offsetHeight) ||
-      (div.offsetTop < bottom && bottom <div.offsetTop+div.offsetHeight)
-    ){
-      arr.push(div.id);
-    }
-  });
-  document.getElementById("status").innerHTML = arr.join(",")
-});

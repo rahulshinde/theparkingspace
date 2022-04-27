@@ -1,0 +1,240 @@
+@media (hover: hover){
+	.nav_link:hover:after{
+	  display: block;
+	}
+}
+
+@font-face {
+  font-family: "Dinish";
+  src: url("../fonts/DinishExpanded-Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roundaway Gothic";
+  src: url("../fonts/RJSRoundawayGothic.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roundaway Stencil";
+  src: url("../fonts/RJSRoundawayStencil.otf");
+  font-weight: 400;
+}
+
+:root {
+  --blue: #2760FF;
+  --xl_font: 5rem;
+  --l_font: 3rem;
+  --m_font: 1rem;
+  --s_font: 0.75rem;
+  --outer_margin:  2.5rem;
+  --outline_offset: 0.25rem;
+
+  --icon_3: #8dc63f;
+}
+
+html{
+  font-size: 24px;
+}
+
+body{
+  background-color: #fff;
+	font-family: Dinish, sans-serif;
+  line-height: 1.1;
+  margin: 0;
+}
+
+section{
+	margin-left: 20rem;
+	margin-right: 20rem;
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+}
+
+footer{
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right:  0;
+  background-color: #fff;
+  font-size: var(--s_font);
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+  align-items: center;
+}
+
+.spacer{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#header_info{
+	padding: 1rem;
+  width: 15rem;
+  font-size: var(--s_font);
+  position: fixed;
+  z-index: 3;
+  bottom: var(--outer_margin);
+  text-align: left;
+  right: var(--outer_margin);
+  box-sizing: border-box;
+	background-color: var(--secondary);
+	border-radius: 1rem;
+}
+
+h1,
+h2,
+h3{
+  font-weight: normal;
+  width: 100%;
+}
+
+h1{
+  font-size: var(--m_font);
+  letter-spacing: 0.5rem;
+  margin-top: 3.5rem;
+  text-transform: uppercase;
+}
+
+h2{
+  font-family: Roundaway Gothic;
+  font-size: var(--xl_font);
+  text-align: center;
+  margin-top: 0;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+h3{
+  font-size: var(--s_font);
+  margin: 2rem 0;
+} 
+
+a{
+  text-decoration: underline;
+  color:  inherit;
+}
+
+.button{
+  background-color: transparent;
+  border:  none;
+}
+
+#main_nav{
+	background-color: var(--secondary);
+	padding: 1rem;
+  display: flex;
+  z-index: 2;
+  position: fixed;
+  top: var(--outer_margin);
+  right: var(--outer_margin);
+  align-items: center;
+}
+#nav_link_container{
+  display: flex;
+  align-items: center;
+}
+
+.nav_link:first-child{
+  border-left:  3px solid #000;
+}
+
+.nav_link{
+  display: block;
+  font-family: 'Roundaway Gothic';
+  position: relative;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: var(--m_font);
+  width: 3.5rem;
+  padding: 0.5rem 0.5rem 3rem 0.5rem;
+  border-right: 3px solid #000;
+  text-align: center;
+  line-height: 1;
+}
+
+.nav_link:focus-visible{
+	background-color: var(--primary);
+	color: var(--secondary);
+}
+
+.nav_link:focus-visible:after{
+	display: block;
+	background-color: var(--secondary);
+}
+
+.nav_link:after{
+  display: none;
+  content: '';
+  bottom:  0rem;
+  width: 1rem;
+  height:  1rem;
+  border-radius: 50%;
+  left:  50%;
+  transform:  translateX(-50%);
+  position: absolute;
+  background-color: #000;
+  border:  3px solid #000;
+}
+
+.nav_button{
+  box-sizing: border-box;
+  padding:  0.5rem;
+  margin-left:  2rem;
+}
+
+.nav_button img{
+  height: 3rem;
+}
+
+.section_heading_wraper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: var(--outer_margin);
+}
+
+.section_heading_wraper *{
+	width: auto;
+	margin-bottom: 0;
+}
+
+.background{
+  padding:  2rem 4rem;
+  border-radius: 1rem;
+  line-height: 1.3;
+  box-sizing: border-box;
+  position: relative;
+  color: var(--primary);
+}
+
+.background:after{
+  content:  '';
+  position: absolute;
+  top:  0.5rem;
+  left:  0.5rem;
+  bottom:  0.5rem;
+  right: 0.5rem;
+  border-radius: 0.5rem;
+  border:  3px solid var(--secondary);
+}
+
+@media (max-width: 1850px){
+  html{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1600px){
+  html{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1440px){
+  html{
+    font-size: 16px;
+  }
+}

@@ -3,324 +3,381 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>The Parking Space</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<title>The Parking Spaces</title>
+	<link rel="stylesheet" type="text/css" href="css/generic.css">
 	<link rel="stylesheet" type="text/css" href="css/map.css">
+	<link rel="stylesheet" type="text/css" href="css/image_modal.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
 </head>
 <body>
 	<header>
-		<h1>Parking<br>Spaces</h1>
+		<h1>The<br>Parking<br>Spaces</h1>
 		<nav id="main_nav">
 			<div id="nav_link_container">
-				<a class='nav_link map' href="#listen">Map</a>
-				<a class='nav_link about' href="#about">Location & Access</a>
-				<a class='nav_link survey' href="#survey">Survey & Feedback</a>
+				<a class='nav_link map' href="#map">Map</a>
+				<a class='nav_link team' href="#team">Team</a>
+				<a class='nav_link access' href="#access">Access</a>
 			</div>
 		</nav>
-		<div id='interaction_notification'>
-			<img src="assets/map/cursor.svg">
-			<span>Hover and click on the icons to view audio from the different locations or start tabbing to move sequentially through the links.</span>
-		</div>
 
-		<a href='https://goo.gl/maps/1FVXJU8tsTcya1Wg6' class='map_link' id='map_location'>
-			<svg version="1.1" id="location" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
-			<style type="text/css">
-				.st0{fill:transparent;}
-				.st1{fill:#ffffff;}
-			</style>
-			<g id="ZG0D5C.tif_00000157279642305358141550000014550182550694504894_">
-				<g>
-					<path class="st1" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6
-						c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4
-						c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z M176.4,113.7c2-30.7-22.2-56.3-52.3-56.4c-28.6-0.1-52.8,23.8-52.8,52.2
-						c-0.1,31.2,26,56.1,57.2,53.3C154.2,160.5,174.8,139.5,176.4,113.7z"/>
-				</g>
-			</g>
-			</svg>
 
+		
+		<a href='https://goo.gl/maps/1FVXJU8tsTcya1Wg6' target='blank' class='map_link' id='map_location' tabindex='1'>
 			<span>Iowa City, Iowa</span>
 		</a>
-		
-	</header>
 
 		<div id='header_info'>
-			The Parking Space is a site-specific listening experience that reimagines a humble parking ramp in downtown Iowa City* as a place of rest and perspective.
+			a series of site-specific listening experiences to invite rest, activation and imagination around downtown Iowa City. 
 		</div>
 	</header>
 
 	<main>
-		<section id='map_container'>
-			<a href="the_parking_space.html" class='marker' id='the_parking_space'>
-				<img id='logo' src="assets/logo.svg">
-				<div class='map_link' id='link_parking_space'>
-					<span class='number'>P</span>
-					<div class='title_author_container'>
-						<span class='title'>The Parking Space</span>
-						<span class='author'>Stephanie, Ramin, & Steven</span>
+		<section id='map'>
+			<h2>Map</h2>
+			<div id='interaction_notification'>
+				<img src="assets/map/cursor.svg">
+				<span>Hover and click on the icons to view audio from the different locations or start tabbing to move sequentially through the links.</span>
+			</div>
+			<div id='map_container'>
+				<a href="the_parking_space.html" class='marker' id='the_parking_space'>
+					<img id='logo' src="assets/logo.svg">
+					<div class='map_link' id='link_parking_space'>
+						<span class='number'>
+							000
+							<br>
+							<span class='author'>by Stephanie, Steven, & Ramin</span>
+						</span>
+						<div class='title_author_container'>
+							<img class='icon' id='parking' src="assets/map/icons/parking.svg">
+							<span class='title'>Chauncey Swan Parking Ramp</span>
+							<span class='address'>415 E. Washington</span>
+							<span class='coordinates'>41.659305, -91.528957</span>
+						</div>
 					</div>
-				</div>
-				<img class='icon' id='parking' src="assets/map/icons/parking.svg">
-			</a>
-			
-			<a href="https://001.theparkingspaces.com" class='marker' id='marker_1'>
-				<span class='marker_number'>1</span>
-				<svg version="1.1" class='marker_pin' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
-				<style type="text/css">
-					.st0{fill:transparent;}
-					.m1{fill:#d8167b;}
-				</style>				
-						<path class="m1" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6 c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4 c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z"/>
-				</svg>
-				<div class='map_link' id='link_1'>
-					<span class='number'>1</span>
-					<div class='title_author_container'>
-						<span class='title'>Onlooking the Mural</span>
-						<span class='author'>M. Miller & David Hurlin</span>
-					</div>
-				</div>
-
-				<img class='icon' id='icon-1' src="assets/map/icons/icon-1.svg">
-			</a>
-
-			<a href="https://002.theparkingspaces.com" class='marker' id='marker_2'>
-				<span class='marker_number'>2</span>
-				<svg version="1.1" class='marker_pin' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
-				<style type="text/css">
-					.st0{fill:transparent;}
-					.m2{fill:#88051d;}
-				</style>
+				</a>
 				
-						<path class="m2" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6 c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4 c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z"/>
-				</svg>
-
-				<div class='map_link' id='link_2'>
-					<span class='number'>2</span>
-					<div class='title_author_container'>
-						<span class='title'>Lorem ipsum title</span>
-						<span class='author'>Chuy Renteria</span>
+				<a href="https://001.theparkingspaces.com" class='marker' id='marker_1'>
+					<span class='marker_number'>1</span>
+					<svg version="1.1" class='marker_pin' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
+					<style type="text/css">
+					</style>				
+							<path class="m1" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6 c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4 c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z"/>
+					</svg>
+					<div class='map_link' id='link_1'>
+						<span class='number'>
+							001
+							<br>
+							<span class='author'>by Caleb Rainey & Wave Cage</span>
+						</span>
+						<div class='title_author_container'>
+							<img class='icon' id='icon-1' src="assets/map/icons/icon-1.svg">
+							<span class='title'>
+								Capitol St. Parking Ramp
+							</span>
+							<span class='address'>201 S Clinton St</span>
+							<span class='coordinates'>41.658523, -91.534757</span>
+						</div>
 					</div>
+				</a>
+
+				<a href="https://002.theparkingspaces.com" class='marker black_type' id='marker_2'>
+					<span class='marker_number'>2</span>
+					<svg version="1.1" class='marker_pin' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
+							<path class="m2" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6 c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4 c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z"/>
+					</svg>
+
+					<div class='map_link' id='link_2'>
+						<span class='number'>
+							002
+							<br>
+							<span class='author'>by Jason Snell</span>
+					</span>
+						<div class='title_author_container'>
+							<img class='icon' id='icon-2' src="assets/map/icons/icon-2.svg">
+							<span class='title'>Capitol St. Parking Ramp</span>
+							<span class='address'>201 S Clinton St</span>
+							<span class='coordinates'>41.658523, -91.534757</span>
+						</div>
+					</div>
+
+				</a>
+
+				<a href="https://003.theparkingspaces.com" class='marker black_type' id='marker_3'>
+					<span class='marker_number'>3</span>
+					<svg version="1.1" class='marker_pin' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
+					
+							<path class="m3" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6 c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4 c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z"/>
+					</svg>
+
+					<div class='map_link' id='link_3'>
+						<span class='number'>
+							003
+							<br>
+							<span class='author'>by Micah Ariel James</span>
+					</span>
+						<div class='title_author_container'>
+							<img class='icon' id='icon-3' src="assets/map/icons/icon-3.svg">
+							<span class='title'>Lawn of the Old Capitol</span>
+							<span class='address'>South Clinton & Iowa Ave</span>
+							<span class='coordinates'>41.661196, -91.534439</span>
+						</div>
+					</div>
+
+				</a>
+
+				<a href="https://004.theparkingspaces.com" class='marker black_type' id='marker_4'>
+					<span class='marker_number'>4</span>
+					<svg version="1.1" class='marker_pin' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
+							<path class="m4" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6 c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4 c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z"/>
+					</svg>
+
+					<div class='map_link' id='link_4'>
+						<span class='number'>
+							004
+							<br>
+							<span class='author'>by Dawson Davenport</span>
+					</span>
+						<div class='title_author_container'>
+							<img class='icon' id='icon-4' src="assets/map/icons/icon-4.svg">
+							<span class='title'>Black Hawk Mini Park</span>
+							<span class='address'>207 E Washington</span>
+							<span class='coordinates'>41.659929, -91.532892</span>
+						</div>
+					</div>
+
+				</a>
+
+				<a href="https://005.theparkingspaces.com" class='marker black_type' id='marker_5'>
+					<span class='marker_number'>5</span>
+					<svg version="1.1" class='marker_pin' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
+					
+							<path class="m5" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6 c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4 c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z"/>
+					</svg>
+
+					<div class='map_link' id='link_5'>
+						<span class='number'>
+							005
+							<br>
+							<span class='author'>by Chuy Renteria</span>
+					</span>
+						<div class='title_author_container'>
+							<img class='icon' id='icon-5' src="assets/map/icons/icon-5.svg">
+							<span class='title'>Black Hawk Mini Park</span>
+							<span class='address'>207 E Washington</span>
+							<span class='coordinates'>41.659929, -91.532892</span>
+						</div>
+					</div>
+
+				</a>
+
+				<a href="https://006.theparkingspaces.com" class='marker' id='marker_6'>
+					<span class='marker_number'>6</span>
+					<svg version="1.1" class='marker_pin' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
+							<path class="m6" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6 c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4 c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z"/>
+					</svg>
+
+					<div class='map_link' id='link_6'>
+						<span class='number'>
+							006
+							<br>
+							<span class='author'>by Family Folk Machine</span>
+					</span>
+						<div class='title_author_container'>
+							<img class='icon' id='icon-6' src="assets/map/icons/icon-6.svg">
+							<span class='title'>Playground @ the Library</span>
+							<span class='address'>210 S Dubuque St</span>
+							<span class='coordinates'>41.658998, -91.532829</span>
+						</div>
+					</div>
+
+				</a>
+
+				<a href="https://007.theparkingspaces.com" class='marker black_type' id='marker_7'>
+					<span class='marker_number'>7</span>
+					<svg version="1.1" class='marker_pin' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
+					
+							<path class="m7" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6 c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4 c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z"/>
+					</svg>
+
+					<div class='map_link' data-target='marker_7' id='link_7'>
+						<span class='number'>
+							007
+							<br>
+							<span class='author'>by M. Miller & David Hurlin</span>
+					</span>
+						<div class='title_author_container'>
+							<img class='icon' id='icon-7' src="assets/map/icons/icon-7.svg">
+							<span class='title'>Senior Center</span>
+							<span class='address'>28 52240 S Linn St</span>
+							<span class='coordinates'>41.660426, -91.531596</span>
+						</div>
+					</div>
+
+
+				</a>
+
+				<a href="https://008.theparkingspaces.com" class='marker black_type' id='marker_8'>
+					<span class='marker_number'>8</span>
+					<svg version="1.1" class='marker_pin' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
+					
+							<path class="m8" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6 c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4 c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z"/>
+					</svg>
+
+					<div class='map_link' id='link_8'>
+						<span class='number'>
+							008
+							<br>
+							<span class='author'>by Wombat</span>
+						</span>
+						<div class='title_author_container'>
+							<img class='icon' id='icon-8' src="assets/map/icons/icon-8.svg">
+							<span class='title'>Elevator in the Clock Tower Parking Ramp</span>
+							<span class='address'>10 S Linn St</span>
+							<span class='coordinates'>41.660945, -91.531572</span>
+						</div>
+					</div>
+
+				</a>
+
+				<a href="https://009.theparkingspaces.com" class='marker black_type' id='marker_9'>
+					<span class='marker_number'>9</span>
+					<svg version="1.1" class='marker_pin' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
+					
+							<path class="m9" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6 c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4 c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z"/>
+					</svg>
+
+					<div class='map_link' id='link_9'>
+						<span class='number'>
+							009
+							<br>
+							<span class='author'>by Filmcast Podscene</span>
+						</span>
+						<div class='title_author_container'>
+							<img class='icon' id='icon-9' src="assets/map/icons/icon-9.svg">
+							<span class='title'>Green area in front of Chauncey</span>
+							<span class='address'>415 E Washington</span>
+							<span class='coordinates'>41.659638, -91.529963</span>
+						</div>
+					</div>
+
+				</a>
+
+				<a href="https://010.theparkingspaces.com" class='marker black_type' id='marker_10'>
+					<span class='marker_number'>10</span>
+					<svg version="1.1" class='marker_pin' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
+						<path class="m10" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6 c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4 c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z"/>
+					</svg>
+
+					<div class='map_link' id='link_10'>
+						<span class='number'>
+							010
+							<br>
+							<span class='author'>by Mary Mayo</span>
+						</span>
+						<div class='title_author_container'>
+							<img class='icon' id='icon-10' src="assets/map/icons/icon-10.svg">
+							<span class='title'>Under the walking bridge at Chauncey</span>
+							<span class='address'>415 E Washington</span>
+							<span class='coordinates'>41.659638, -91.529963</span>
+						</div>
+					</div>
+
+				</a>
+
+				<div class='street streetv' id='clinton'>
+					<img src="assets/map/clinton.svg">
 				</div>
 
-				<img class='icon' id='icon-2' src="assets/map/icons/icon-2.svg">
-			</a>
-
-			<a href="https://003.theparkingspaces.com" class='marker' id='marker_3'>
-				<span class='marker_number'>3</span>
-				<svg version="1.1" class='marker_pin' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
-				<style type="text/css">
-					.st0{fill:transparent;}
-					.m3{fill:#8dc63f;}
-				</style>
-				
-						<path class="m3" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6 c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4 c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z"/>
-				</svg>
-
-				<div class='map_link' id='link_3'>
-					<span class='number'>3</span>
-					<div class='title_author_container'>
-						<span class='title'>Lorem ipsum title</span>
-						<span class='author'>Dawson Davenport</span>
-					</div>
+				<div class='street streetv' id='dubuque'>
+					<img src="assets/map/dubuque.svg">
+				</div>
+				<div class='street streetv' id='dubuque_top'>
 				</div>
 
-				<img class='icon' id='icon-3' src="assets/map/icons/icon-3.svg">
-			</a>
-
-			<a href="https://004.theparkingspaces.com" class='marker' id='marker_4'>
-				<span class='marker_number'>4</span>
-				<svg version="1.1" class='marker_pin' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
-				<style type="text/css">
-					.st0{fill:transparent;}
-					.m4{fill:#f46e24;}
-				</style>
-				
-						<path class="m4" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6 c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4 c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z"/>
-				</svg>
-
-				<div class='map_link' id='link_4'>
-					<span class='number'>4</span>
-					<div class='title_author_container'>
-						<span class='title'>Spotless</span>
-						<span class='author'>Caleb Rainey</span>
-					</div>
+				<div class='street streetv' id='linn'>
+					<img src="assets/map/linn.svg">
 				</div>
 
-				<img class='icon' id='icon-4' src="assets/map/icons/icon-4.svg">
-			</a>
-
-			<a href="https://005.theparkingspaces.com" class='marker' id='marker_5'>
-				<span class='marker_number'>5</span>
-				<svg version="1.1" class='marker_pin' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
-				<style type="text/css">
-					.st0{fill:transparent;}
-					.m5{fill:#a747dd;}
-				</style>
-				
-						<path class="m5" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6 c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4 c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z"/>
-				</svg>
-
-				<div class='map_link' id='link_5'>
-					<span class='number'>5</span>
-					<div class='title_author_container'>
-						<span class='title'>Lorem ipsum title</span>
-						<span class='author'>Family Folk Machine</span>
-					</div>
+				<div class='street streetv' id='gilbert'>
+					<img src="assets/map/gilbert.svg">
 				</div>
 
-				<img class='icon' id='icon-5' src="assets/map/icons/icon-5.svg">
-			</a>
-
-			<a href="https://006.theparkingspaces.com" class='marker' id='marker_6'>
-				<span class='marker_number'>6</span>
-				<svg version="1.1" class='marker_pin' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
-				<style type="text/css">
-					.st0{fill:transparent;}
-					.m6	{fill:#00a77f;}
-				</style>
-						<path class="m6" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6 c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4 c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z"/>
-				</svg>
-
-				<div class='map_link' id='link_6'>
-					<span class='number'>6</span>
-					<div class='title_author_container'>
-						<span class='title'>Lorem ipsum title</span>
-						<span class='author'>Mary Mayo</span>
-					</div>
+				<div class='street streetv' id='van_buren'>
 				</div>
 
-				<img class='icon' id='icon-6' src="assets/map/icons/icon-6.svg">
-			</a>
-
-			<a href="https://007.theparkingspaces.com" class='marker' id='marker_7'>
-				<span class='marker_number'>7</span>
-				<svg version="1.1" class='marker_pin' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
-				<style type="text/css">
-					.st0{fill:transparent;}
-					.m7{fill:#ff7c59;}
-				</style>
-				
-						<path class="m7" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6 c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4 c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z"/>
-				</svg>
-
-				<div class='map_link' data-target='marker_7' id='link_7'>
-					<span class='number'>7</span>
-					<div class='title_author_container'>
-						<span class='title'>Lorem ipsum title</span>
-						<span class='author'>Filmcast Podscene</span>
-					</div>
+				<div class='street streeth' id='iowa_ave'>
+					<img src="assets/map/iowa_ave.svg">
 				</div>
 
-
-				<img class='icon' id='icon-7' src="assets/map/icons/icon-7.svg">
-			</a>
-
-			<a href="https://008.theparkingspaces.com" class='marker' id='marker_8'>
-				<span class='marker_number'>8</span>
-				<svg version="1.1" class='marker_pin' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
-				<style type="text/css">
-					.st0{fill:transparent;}
-					.m8{fill:#2ec1ff;}
-				</style>
-				
-						<path class="m8" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6 c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4 c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z"/>
-				</svg>
-
-				<div class='map_link' id='link_8'>
-					<span class='number'>8</span>
-					<div class='title_author_container'>
-						<span class='title'>Lorem ipsum title</span>
-						<span class='author'>Wombat (Will, Justin, Carlos)</span>
-					</div>
+				<div class='street streeth' id='washington'>
+					<img src="assets/map/washington.svg">
 				</div>
 
-				<img class='icon' id='icon-8' src="assets/map/icons/icon-8.svg">
-			</a>
-
-			<a href="https://009.theparkingspaces.com" class='marker' id='marker_9'>
-				<span class='marker_number'>9</span>
-				<svg version="1.1" class='marker_pin' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
-				<style type="text/css">
-					.st0{fill:transparent;}
-					.m9{fill:#fe0000;}
-				</style>
-				
-						<path class="m9" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6 c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4 c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z"/>
-				</svg>
-
-				<div class='map_link' id='link_9'>
-					<span class='number'>9</span>
-					<div class='title_author_container'>
-						<span class='title'>Lorem ipsum title</span>
-						<span class='author'>Micah Ariel James</span>
-					</div>
+				<div class='street streeth' id='college'>
+					<img src="assets/map/college.svg">
 				</div>
 
-				<img class='icon' id='icon-9' src="assets/map/icons/icon-9.svg">
-			</a>
-
-			<a href="https://010.theparkingspaces.com" class='marker' id='marker_10'>
-				<span class='marker_number'>10</span>
-				<svg version="1.1" class='marker_pin' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.8 364.9" style="enable-background:new 0 0 247.8 364.9;" xml:space="preserve">
-				<style type="text/css">
-					.st0{fill:transparent;}
-					.m10{fill:#00e77b;}
-				</style>
-					<path class="m10" d="M140.2,337.6c-7.5,12.4-25.4,12.5-33,0.1c-0.1-0.1-0.1-0.2-0.2-0.3l-30.9-55.6 c-19.4-31.1-38.7-62.3-58.2-93.4C-12.4,140.3-3.5,73,38.5,34.2C65.2,9.5,96.7-1.9,133,0.2c54.5,3.2,103.1,46.6,112.7,100.4 c5.7,31.9,0.2,61.5-16.6,89.2L140.2,337.6z"/>
-				</svg>
-
-				<div class='map_link' id='link_10'>
-					<span class='number'>10</span>
-					<div class='title_author_container'>
-						<span class='title'>Rehersal Music</span>
-						<span class='author'>Jason Snell</span>
-					</div>
+				<div class='street streeth' id='burlington'>
+					<img src="assets/map/burlington.svg">
 				</div>
+			</div>
+		</section>
 
-				<img class='icon' id='icon-10' src="assets/map/icons/icon-10.svg">
-			</a>
+		<section id='team'>
+			<div class="section_heading_wraper">
+				<h2>Team</h2>
 
-			<div class='street streetv' id='clinton'>
-				<img src="assets/map/clinton.svg">
+				<div class='image_link' id='team_image'>
+					<button class="open_image" id="team_image_button">
+						<img id='steven' src="assets/figure.svg">
+						<img id='ramin' src="assets/figure.svg">
+						<img id='stephanie' src="assets/figure.svg">
+					</button>
+					<div class="image_container">
+						<div class="image_inner_container">
+							<img src="assets/img/team.jpg" alt='Pictured from left to right: Steven, Ramin, and Stephanie standing on the roof of the Chauncey Swan Parking Ramp located in Iowa City, Iowa.'>
+						</div>
+						<span class="description">
+						<button class='close_modal'>Close</button>
+						Pictured from left to right: Steven, Ramin, and Stephanie standing on the roof of the Chauncey Swan Parking Ramp located in Iowa City, Iowa.</span>
+					</div>	
+				</div>
 			</div>
 
-			<div class='street streetv' id='dubuque'>
-				<img src="assets/map/dubuque.svg">
+			<div class='contributor'>
+				Storyteller Steven Willis uses his poetic and theatrical background to embark on the daunting task of creatively articulating African American culture. With art heavily influenced by urban life and religion, Steven mixes elements of hip hop, poetics, and theatrical performance with formal teaching of anthropology and political theory to help express his eclectic personal narrative. Willis is a contributing writer to the Breakbeat Poets Anthology, NYU’s National Council for Teachers of English Journal, is a 3-time individual world poetry slam finalist and formal resident Poet of the Nuyorican Poet’s Café. He MFA in acting from the University of Iowa in 2021 and is a Iowa Writers Workshop Fellow.
+				<br>
+				<a href="https://www.stevenwillispoetry.com/" target="blank">stevenwillispoetry.com</a>
 			</div>
 
-			<div class='street streetv' id='linn'>
-				<img src="assets/map/linn.svg">
+			<div class='contributor'>
+				Ramin Roshandel is a PhD candidate in the Composition program at the University of Iowa, whose music is based around incorporating ‘experience’ as a fundamental concept although through a non-experimental approach in performance. Considering phenomena such as instability, cultural identity, and communicational language on one hand, and being inspired by Iranian music microtones as a setār (an Iranian instrument) player on the other, leads him to consider indeterminate, improvisatory, and abstract structures in his music; in contrast, or alongside post- or non-tonal structures.
+				<br>
+				<a href="https://soundcloud.com/ramin-roshandel" target="blank">soundcloud.com/ramin-roshandel</a>
 			</div>
 
-			<div class='street streetv' id='gilbert'>
-				<img src="assets/map/gilbert.svg">
+			<div class='contributor'>
+				Stephanie Miracle’s choreography has been described as, “iconic and nuanced…with an irreverence that makes you smile unconsciously,” (Rick Westerkamp review of GROOVE, 2014). Her process is dedicated to the concept of abundant possibility found within awareness and play in the everyday setting. These works manifest through site-specific happenings, sound installations, experimental films and live stage performances. Her projects have been presented in Germany, Ireland, Portugal, Italy, Mexico, Russia, Turkey, Hungary, New York City, Los Angeles, and Washington, DC. She was a Fulbright Fellow to Germany from 2014-15 and has an MFA in Dance from the University of Maryland. She is a Visiting Assistant Professor in Dance at University of Iowa.
+				<br>
+				<a href="https://www.stephaniemiracledances.com/" target="blank">stephaniemiracledances.com</a>
 			</div>
+		</section>
 
-			<div class='street streeth' id='iowa_ave'>
-				<img src="assets/map/iowa_ave.svg">
+		<section id='access'>
+			<h2>Access</h2>
+
+			<div>
+				 We acknowledge the land known as Iowa City belongs to the indigenous people of the Sac and Fox of the Iowa in Mississippi, Kickapoo, Omaha, Sioux, Otoe, Iowa, Ponca, Winnebago, Menomiee, Osage, Potawatomi, Ottawa, Missouri. We invite you to consider what your understanding of "public space" means as you listen. 
 			</div>
-
-			<div class='street streeth' id='washington'>
-				<img src="assets/map/washington.svg">
-			</div>
-
-			<div class='street streeth' id='college'>
-				<img src="assets/map/college.svg">
-			</div>
-
-			<div class='street streeth' id='burlington'>
-				<img src="assets/map/burlington.svg">
-			</div>
-
 		</section>
 	</main>
 
 	<footer>
-		<span>Created in collaboration by Steven Willis, Stephanie Miracle, and Ramin Roshandel</span>
-		<div class="spacer">|</div>
 		<span id='site_credits'>site by rahul, rush, & sayuri</span>
 	</footer>
 
-	<script type="text/javascript" src="js/site.js"></script>
-	<script type="text/javascript" src="js/audio.js"></script>
+	<script type="text/javascript" src="js/image.js"></script>
+	<script type="text/javascript" src="js/scroll_handler.js"></script>
+
 </body>
 </html>
