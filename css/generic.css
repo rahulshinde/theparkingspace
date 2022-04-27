@@ -314,6 +314,7 @@ a{
 
   .nav_link{
     width: 4.25rem;
+    transform: translateZ(0);
   }
 
   #main_nav{
