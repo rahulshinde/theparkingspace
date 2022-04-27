@@ -274,3 +274,9 @@ a{
     position: absolute;
   }
 }
+
+@media (max-width: 767px), (hover: none) and (max-width: 767px){
+  :root{
+    --outer_margin: 1rem;
+  }
+}
