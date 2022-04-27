@@ -15,6 +15,10 @@
 		opacity: 1;
 	}
 
+	.marker:hover{
+		z-index: 5;
+	}
+
 	#map_location:hover{
 		filter: invert(1);
 	}
@@ -52,6 +56,10 @@ body.section_3 .access:after{
   100%{
     opacity: 1;
   }
+}
+
+#map{
+	padding-bottom: calc(7rem + 4rem);
 }
 
 #interaction_notification{
@@ -108,7 +116,7 @@ body.section_3 .access:after{
 
 #map_container{
 	position: relative;
-	height: calc(100vh - 24rem);
+	height: calc(100vh - 26rem);
 	border-radius: 2rem;
 	/*background-color: #f2eb68;*/
 	z-index: 4;
@@ -131,13 +139,13 @@ body.section_3 .access:after{
 
 
 #marker_1{
-	bottom: 30%;
+	bottom: 20%;
 	left: 10%;
 	outline-color: #841A5E;
 }
 
 #marker_2{
-	bottom: 30%;
+	bottom: 20%;
 	left: 15%;
 	outline-color: #E700C1;
 }
@@ -149,51 +157,51 @@ body.section_3 .access:after{
 }
 
 #marker_4{
-	top: 30%;
+	top: 40%;
 	left: 35%;
 	outline-color: #00D5FF;
 }
 
 #marker_5{
-	top: 34%;
+	top: 44%;
 	left: 30%;
 	outline-color: #F46E24;
 }
 
 #marker_6{
-	top: 50%;
+	top: 60%;
 	left: 37%;
 	outline-color: #0D7236;
 
 }
 
 #marker_7{
-	top: 18%;
+	top: 26%;
 	left: 50%;
 	outline-color: #F94963;
 }
 
 #marker_8{
-	top: 10%;
+	top: 15%;
 	left: 50%;
 	outline-color: #25a7a3;
 }
 
 #marker_9{
-	top: 29%;
-	left: 69%;
+	top: 37%;
+	left: 67%;
 	outline-color: #83D362;
 }
 
 #marker_10{
-	top: 40%;
+	top: 47%;
 	left: 82%;
 	outline-color: #AF6EF9;
 }
 
 #the_parking_space{
-	top: 35%;
-	left: 74%;
+	top: 44%;
+	left: 73%;
 	outline-color: var(--blue);
 }
 
@@ -245,18 +253,18 @@ body.section_3 .access:after{
 }
 
 #clinton img{
-	bottom: 40%;
+	bottom: 36%;
 	width: 75%;
 }
 
 #dubuque{
-	height: 37%;
+	height: 30%;
 	left: 35%;
 	bottom: 0;
 }
 
 #dubuque_top{
-	height: 30%;
+	height: 40%;
 	left: 35%;
 	top: 0;
 }
@@ -272,7 +280,7 @@ body.section_3 .access:after{
 }
 
 #linn img{
-	bottom: 10%;
+	bottom: 40%;
 }
 
 #gilbert{
@@ -296,27 +304,28 @@ body.section_3 .access:after{
 #iowa_ave{
 	width: 80%;
 	left: 20%;
-	top: 13%;
+	top: 15%;
 }
 
 #iowa_ave img{
 	bottom: 10%;
+	left: 25%;
 }
 
 #washington{
 	width: 100%;
 	left: 0%;
-	top: 30%;
+	top: 40%;
 }
 
 #washington img{
-	right: 1%;
+	left: 1%;
 }
 
 #college{
-	width: 50%;
-	left: 50%;
-	top: 52%;
+	width: 49%;
+	left: 51%;
+	top: 60%;
 }
 
 #college img{
@@ -326,11 +335,12 @@ body.section_3 .access:after{
 #burlington{
 	width: 100%;
 	left: 0%;
-	top: 73%;
+	top: 85%;
 }
 
 #burlington img{
 	bottom: 10%;
+	left: 1%;
 }
 
 .streetv{
