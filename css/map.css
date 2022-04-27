@@ -771,3 +771,28 @@ h1{
 		padding: 0;
 	}
 }
+
+@media (max-width: 767px), (hover: none) and (max-width: 767px){
+	.tablet_markers_container,
+	.streets_container{
+		display: none;
+	}
+
+	.map_links_container{
+		margin-top: 0;
+	}
+
+	.map_links_container .logo,
+	.map_links_container .marker_pin,
+	.map_links_container .marker_number{
+		display: none;
+	}
+
+	.map_links_container .marker{
+		width: 100%;
+	}
+
+	.map_links_container .map_link{
+		width: 100%;
+	}
+}
