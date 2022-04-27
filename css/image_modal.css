@@ -175,7 +175,7 @@ body{
   }
 }
 
-@media (max-width: 1000px) and (min-height: 1000px){
+@media (min-width: 768px) and (max-width: 1000px) and (min-height: 1000px){
   .image_container{
     flex-direction: column;
   }
@@ -190,7 +190,7 @@ body{
   }
 }
 
-@media (max-width: 1000px) and (min-height: 800px){
+@media (max-width: 7680px) and (min-height: 600px){
   .image_container{
     flex-direction: column;
   }
