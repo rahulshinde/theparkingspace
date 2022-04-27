@@ -130,6 +130,19 @@ a{
   border:  none;
 }
 
+.page_title{
+  font-family: 'Roundaway Gothic';
+  box-sizing: border-box;
+  position: fixed;
+  text-align: center;
+  color: #000;
+  top: var(--outer_margin);
+  width: 15rem;
+  left: var(--outer_margin);
+  margin-bottom: 0;
+  z-index: 4;
+}
+
 #main_nav{
 	background-color: var(--secondary);
 	padding: 1rem;
@@ -140,6 +153,8 @@ a{
   top: var(--outer_margin);
   right: var(--outer_margin);
   align-items: center;
+  box-sizing: border-box;
+  border-radius: 1rem;
 }
 #nav_link_container{
   display: flex;
@@ -278,5 +293,27 @@ a{
 @media (max-width: 767px), (hover: none) and (max-width: 767px){
   :root{
     --outer_margin: 1rem;
+    --dinish_l_font: 2rem;
+  }
+
+  #main_nav{
+    top: var(--outer_margin);
+    width: auto;
+    left:50%;
+    right: auto;
+    transform: translateX(-50%);
+    justify-content: center;
+  }
+
+  section{
+    padding-top: 8.5rem;
+  }
+
+  .page_title{
+    position: static;
+    display: block;
+    width: auto;
+    z-index: 4;
+    margin-top: 9rem;
   }
 }

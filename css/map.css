@@ -381,25 +381,11 @@ body.section_3 .access:after{
 
 /* Generic Page Styles */
 
-header{
-	height: 0;
-}
-
 h1{
-	font-family: 'Roundaway Gothic';
 	letter-spacing: 0;
-	font-size: var(--l_font);
-	box-sizing: border-box;
-	position: fixed;
-	text-align: center;
-	color: #000;
-	top: var(--outer_margin);
-	line-height: 0.8;
-	margin-top: 0;
-	width: 15rem;
-	left: var(--outer_margin);
-	margin-bottom: 0;
-	z-index: 4;
+  font-size: var(--l_font);
+  line-height: 0.8;
+  margin-top: 0;
 }
 
 #site_credits{
@@ -407,13 +393,6 @@ h1{
 }
 
 /* Main navigation  */
-
-#main_nav{
-	display: flex;
-	flex-wrap: wrap;
-	text-align: center;
-	box-sizing: border-box;
-}
 
 .map_link{
 	opacity: 0;
