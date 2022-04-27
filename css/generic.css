@@ -293,16 +293,24 @@ a{
 @media (max-width: 767px), (hover: none) and (max-width: 767px){
   :root{
     --outer_margin: 1rem;
-    --dinish_l_font: 2rem;
+    --dinish_l_font: 1.5rem;
+    --m_font: 1.5rem;
+    --s_font: 1rem;
+  }
+
+  .nav_link{
+    width: 4.25rem;
   }
 
   #main_nav{
-    top: var(--outer_margin);
+    top: 0;
     width: auto;
     left:50%;
     right: auto;
     transform: translateX(-50%);
     justify-content: center;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
   }
 
   section{
