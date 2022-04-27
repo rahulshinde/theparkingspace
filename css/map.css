@@ -659,6 +659,9 @@ h1{
 }
 
 @media (max-width: 1000px), (hover: none){
+	#map_location{
+		z-index: 10;
+	}
 	.marker.tablet_marker{
 		display: block;
 		position: absolute;
@@ -688,7 +691,7 @@ h1{
 	.tablet_markers_container,
 	.streets_container{
 		position: absolute;
-		top: 15rem;
+		top: 29rem;
 		height: 30rem;
 		width: calc(100% - var(--outer_margin) * 2);
 	}
