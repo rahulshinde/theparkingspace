@@ -24,18 +24,18 @@
 
 .image_link{
   box-sizing: border-box;
-  margin-bottom: 4rem;
+  margin-bottom: var(--outer_margin);
 }
 .image_link button{
   position: relative;
   font-family: 'Roundaway Stencil';
   text-align: center;
   background-color: var(--primary);
+  color: var(--secondary);
   border-radius: 1rem;
   padding-top:  1rem;
   padding-bottom:  1.2rem;
   border: none;
-  color: var(--primary);
   width:  100%;
   margin: 0;
   font-size: var(--l_font);
@@ -156,8 +156,8 @@ button.close_modal:after{
   max-height: 100%;
   max-width: 100%;
   top: 50%;
-  right: 0%;
-  transform: translate(0%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 body{
   background-color: white;
@@ -183,6 +183,7 @@ body{
   .image_container .image_inner_container{
     width: 100%;
     margin-right: 0;
+    margin-bottom: 2rem;
   }
 
   .description{
@@ -198,6 +199,7 @@ body{
   .image_container .image_inner_container{
     width: 100%;
     margin-right: 0;
+    margin-bottom: 2rem;
   }
 
   .description{

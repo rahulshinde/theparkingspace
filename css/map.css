@@ -18,10 +18,6 @@
 	.marker:hover{
 		z-index: 5;
 	}
-
-	#map_location:hover{
-		filter: invert(1);
-	}
 	.marker.black_type:hover .marker_number{
 		color: var(--primary);
 	}
@@ -70,33 +66,6 @@ body.section_3 .access:after{
 	bottom: 4rem;
 	width: 18rem;
 	font-size: var(--s_font);
-}
-
-#map_location{
-	background-color: black;
-	opacity: 1;
-	padding: 1.5rem;
-	z-index: 2;
-	width: 15rem;
-	height: 5.75rem;
-	pointer-events: auto;
-	font-family: 'Roundaway Gothic';
-}
-
-#map_location:focus-visible{
-	outline-offset: outline-offset: var(--outline_offset);
-	outline-color: #fff;
-	filter: invert(1);
-}
-
-#map_location svg{
-	height: 2.5rem;
-	margin-right: 1rem;
-}
-
-#map_location span{
-	flex-grow: 1;
-	text-align: center;
 }
 
 #interaction_notification img{
@@ -410,7 +379,7 @@ h1{
   z-index: 10;
   box-sizing: border-box;
   text-decoration: none;
-  color: #fff;
+  color: var(--secondary);
 }
 
 .title_author_container{
@@ -423,15 +392,19 @@ h1{
 .map_link .number{
 	font-family: 'Roundaway Stencil';
 	width: 15rem;
-	padding: 3rem 1rem 2rem 1rem;
+	padding: 0rem 1rem 2rem 1rem;
 	border-radius: 1rem;
-	line-height: 0.3;
 	position: fixed;
 	color: #000;
-	top: 1rem;
-	left: 1rem;
+	top: var(--outer_margin);
+	left: var(--outer_margin);
 	text-align: center;
 	background-color: var(--secondary);
+	box-sizing: border-box;
+	line-height: 1.1;
+}
+
+.map_link .number div{
 	font-size: var(--xl_font);
 }
 
@@ -451,6 +424,7 @@ h1{
 	margin-top: 0.5rem;
 }
 .map_link .author{
+	display: block;
 	font-size: var(--m_font);
 }
 
