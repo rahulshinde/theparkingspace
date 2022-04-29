@@ -730,10 +730,6 @@ h1{
 		line-height: 1;
 	}
 
-	.title:before{
-		content: '@ ';
-	}
-
 	.map_link .number .author{
 		display: block;
 		margin-top: 0.5rem;
