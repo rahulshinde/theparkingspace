@@ -752,12 +752,22 @@ h1{
 	.tablet_markers_container,
 	.streets_container{
 		position: absolute;
-		top: 50rem;
-		height: 30rem;
+		top: 49rem;
+		height: 25rem;
+		width: 100%;
+		left: 0;
+	}
+
+	.logo{
+		width: 2rem;
+	}
+
+	.marker svg{
+		width: 1.5rem;
 	}
 
 	.map_links_container{
-		margin-top: 30;
+		margin-top: 30rem;
 	}
 
 	.map_links_container .logo,
