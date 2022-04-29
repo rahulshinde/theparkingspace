@@ -751,11 +751,13 @@ h1{
 @media (max-width: 767px), (hover: none) and (max-width: 767px){
 	.tablet_markers_container,
 	.streets_container{
-		display: none;
+		position: absolute;
+		top: 50rem;
+		height: 30rem;
 	}
 
 	.map_links_container{
-		margin-top: 0;
+		margin-top: 30;
 	}
 
 	.map_links_container .logo,
