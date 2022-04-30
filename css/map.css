@@ -204,6 +204,9 @@ body.section_3 .access:after{
 	color: #fff;
 	z-index: 2;
 }
+.marker.black_type .marker_number{
+	color: #000;
+}
 
 .tablet_marker{
 	display: none;
@@ -211,12 +214,12 @@ body.section_3 .access:after{
 
 .marker svg{
 	width: 2rem;
-	filter: grayscale(100%) brightness(0);
+	/*filter: grayscale(100%) brightness(0);*/
 }
 
 .logo{
 	width: 3rem;
-	filter: grayscale(100%) contrast(100);
+	/*filter: grayscale(100%) contrast(100);*/
 }
 
 #clinton{
@@ -350,10 +353,12 @@ body.section_3 .access:after{
 
 /* Generic Page Styles */
 
-h1{
+h1.page_title{
 	letter-spacing: 0;
   font-size: var(--l_font);
   line-height: 0.8;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
   margin-top: 0;
 }
 
