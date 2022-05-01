@@ -485,6 +485,7 @@ a{
   header{
     display: flex;
     flex-direction: column;
+    margin-top: 8rem;
     justify-content: center;
   }
 
