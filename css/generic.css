@@ -32,6 +32,9 @@
 .desktop{
   display: block;
 }
+.tablet{
+  display: none;
+}
 .mobile{
   display: none;
 }
@@ -440,6 +443,14 @@ a{
     left: 0;
   }
 
+  .desktop{
+    display: none;
+  }
+
+  .tablet{
+    display: block;
+  }
+
   main{
     margin-bottom: 8rem;
   }
@@ -497,6 +508,9 @@ a{
   }
 
   .desktop{
+    display: none;
+  }
+  .tablet{
     display: none;
   }
   .mobile{

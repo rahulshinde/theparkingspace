@@ -665,7 +665,8 @@ h1.page_title{
 	}
 
 	#interaction_notification{
-		display: none;
+		top: 18rem;
+		bottom: auto;
 	}
 
 	.tablet_markers_container,
@@ -762,6 +763,10 @@ h1.page_title{
 		height: 25rem;
 		width: 100%;
 		left: 0;
+	}
+
+	#interaction_notification{
+		top: 35rem;
 	}
 
 	.logo{
