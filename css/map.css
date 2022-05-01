@@ -672,7 +672,7 @@ h1.page_title{
 	.tablet_markers_container,
 	.streets_container{
 		position: absolute;
-		top: 29rem;
+		top: 28rem;
 		height: 30rem;
 		width: calc(100% - var(--outer_margin) * 2);
 	}
@@ -759,7 +759,7 @@ h1.page_title{
 	.tablet_markers_container,
 	.streets_container{
 		position: absolute;
-		top: 49rem;
+		top: 47rem;
 		height: 25rem;
 		width: 100%;
 		left: 0;
