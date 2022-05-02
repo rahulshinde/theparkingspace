@@ -65,6 +65,7 @@ body.section_4 .acknowledgement:after{
 #interaction_notification{
 	position: absolute;
 	display: flex;
+	align-items: center;
 	left: 50%;
 	transform: translateX(-50%);
 	top: 4.5rem;
@@ -671,14 +672,14 @@ h1.page_title{
 	}
 
 	#interaction_notification{
-		top: 18rem;
+		top: 21rem;
 		bottom: auto;
 	}
 
 	.tablet_markers_container,
 	.streets_container{
 		position: absolute;
-		top: 28rem;
+		top: 36rem;
 		height: 30rem;
 		width: calc(100% - var(--outer_margin) * 2);
 	}
@@ -765,14 +766,14 @@ h1.page_title{
 	.tablet_markers_container,
 	.streets_container{
 		position: absolute;
-		top: 47rem;
+		top: 55rem;
 		height: 25rem;
 		width: 100%;
 		left: 0;
 	}
 
 	#interaction_notification{
-		top: 35rem;
+		top: 42rem;
 	}
 
 	.logo{
