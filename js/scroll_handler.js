@@ -4,7 +4,8 @@ var scroll_position,
     current_position,
     map_top,
     team_top,
-    access_top;
+    access_top,
+    acknowledgement_top;
 
 var body = document.body,
     html = document.documentElement;
@@ -30,8 +31,10 @@ function scrollHandler(){
     setSection(1);
   } else if (scroll_position > team_top - window_height * 0.5 && scroll_position <= access_top - window_height * 0.5 && current_position != 2 ){
     setSection(2)
-  } else if (scroll_position > access_top - window_height * 0.5 && current_position != 3 ){
+  } else if (scroll_position > access_top - window_height * 0.5 && scroll_position <= acknowledgement_top - window_height * 0.5 && current_position != 3 ){
     setSection(3);
+  } else if (scroll_position > acknowledgement_top - window_height * 0.5 && current_position != 4 ){
+    setSection(4);
   }
 }
 
@@ -45,6 +48,7 @@ function clearClasses(){
   document.body.classList.remove('section_1');
   document.body.classList.remove('section_2');
   document.body.classList.remove('section_3');
+  document.body.classList.remove('section_4');
 }
 
 function calculateSectionPositions(){
@@ -54,6 +58,7 @@ function calculateSectionPositions(){
   map_top = document.getElementById('map').offsetTop;
   team_top = document.getElementById('team').offsetTop;
   access_top = document.getElementById('access').offsetTop;
+  acknowledgement_top = document.getElementById('acknowledgement').offsetTop;
 
   scrollHandler();
 }

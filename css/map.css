@@ -32,6 +32,9 @@ body.section_2 .team:after{
 body.section_3 .access:after{
   display: block; 
 }
+body.section_4 .acknowledgement:after{
+  display: block; 
+}
 
 @keyframes blink{
   0%{
@@ -55,6 +58,7 @@ body.section_3 .access:after{
 }
 
 #map{
+	padding-top: 10rem;
 	padding-bottom: calc(7rem + 4rem);
 }
 
@@ -63,7 +67,7 @@ body.section_3 .access:after{
 	display: flex;
 	left: 50%;
 	transform: translateX(-50%);
-	bottom: 4rem;
+	top: 4.5rem;
 	width: 18rem;
 	font-size: var(--s_font);
 }

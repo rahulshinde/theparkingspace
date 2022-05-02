@@ -138,8 +138,10 @@ h2{
 }
 
 h3{
-  font-size: var(--s_font);
-  margin: 2rem 0;
+  font-family: Roundaway Gothic;
+  font-size: var(--m_font);
+  margin: 3rem 0 2rem 0;
+  text-align: center;
 } 
 
 a{
