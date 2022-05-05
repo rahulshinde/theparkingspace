@@ -248,10 +248,11 @@ body.section_4 .acknowledgement:after{
 	height: 40%;
 	left: 35%;
 	top: 0;
+	z-index: 10;
 }
 
-#dubuque img{
-	bottom: 10%;
+#dubuque_top img{
+	bottom: 1.25rem;
 }
 
 #linn{
