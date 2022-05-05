@@ -20,13 +20,16 @@ function setup(){
 
   window.addEventListener('scroll', scrollHandler);
   window.addEventListener('resize', calculateSectionPositions);
+  document.querySelector('.page_title').addEventListener('click', scrollToTop);
+}
+
+function scrollToTop(){
+   window.scrollTo(0, 0);
 }
 
 
 function scrollHandler(){
   scroll_position = window.scrollY;
-  console.log(scroll_position);
-  console.log(map_top - window_height * 0.5);
   if (scroll_position <= team_top - window_height * 0.5 && current_position != 1){
     setSection(1);
   } else if (scroll_position > team_top - window_height * 0.5 && scroll_position <= access_top - window_height * 0.5 && current_position != 2 ){

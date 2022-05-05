@@ -168,6 +168,7 @@ a{
   left: var(--outer_margin);
   margin-bottom: 0;
   z-index: 4;
+  cursor: pointer;
 }
 
 #main_nav{
