@@ -681,7 +681,7 @@ h1.page_title{
 	.tablet_markers_container,
 	.streets_container{
 		position: absolute;
-		top: 36rem;
+		top: 34rem;
 		height: 30rem;
 		width: calc(100% - var(--outer_margin) * 2);
 	}
@@ -768,14 +768,14 @@ h1.page_title{
 	.tablet_markers_container,
 	.streets_container{
 		position: absolute;
-		top: 55rem;
-		height: 25rem;
+		top: 49rem;
+		height: 27rem;
 		width: 100%;
 		left: 0;
 	}
 
 	#interaction_notification{
-		top: 42rem;
+		top: 36rem;
 	}
 
 	.logo{
