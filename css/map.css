@@ -163,19 +163,19 @@ body.section_4 .acknowledgement:after{
 }
 
 .marker_9{
-	top: 37%;
+	top: 35%;
 	left: 67%;
 	outline-color: #83D362;
 }
 
 .marker_10{
-	top: 47%;
+	top: 45%;
 	left: 82%;
 	outline-color: #AF6EF9;
 }
 
 .the_parking_space{
-	top: 44%;
+	top: 43%;
 	left: 73%;
 	outline-color: var(--blue);
 }
@@ -235,7 +235,7 @@ body.section_4 .acknowledgement:after{
 }
 
 #clinton img{
-	bottom: 36%;
+	bottom: 25%;
 	width: 75%;
 }
 
@@ -666,6 +666,15 @@ h1.page_title{
 .partners .funder_logo{
 	height: 6rem;
 	margin: 0 1rem;
+}
+
+@media (max-height: 800px) and (min-width: 100px){
+	#map_container{
+		height: 30rem;
+		width: calc(100% - 6rem);
+		margin-left: 3rem;
+		margin-top: -1rem;
+	}
 }
 
 @media (max-width: 1000px), (hover: none){
