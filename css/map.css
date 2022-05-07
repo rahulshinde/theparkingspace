@@ -708,6 +708,11 @@ h1.page_title{
 		z-index: 10;
 		margin: 1rem auto 0rem auto;
 	}
+	#team{
+		width: calc(100% - var(--outer_margin) * 2);
+		margin-left: var(--outer_margin);
+		margin-right: var(--outer_margin);
+	}
 	.marker.tablet_marker{
 		display: block;
 		position: absolute;
