@@ -647,6 +647,27 @@ h1.page_title{
 	font-size: var(--s_font);
 }
 
+.with_logos{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+#city_logo{
+	height: 7rem;
+}
+
+.funders .funder_logo{
+	height: 5rem;
+	margin: 0 0.5rem;
+}
+
+.partners .funder_logo{
+	height: 6rem;
+	margin: 0 1rem;
+}
+
 @media (max-width: 1000px), (hover: none){
 	#map_location{
 		z-index: 10;
@@ -772,6 +793,17 @@ h1.page_title{
 		height: 27rem;
 		width: 100%;
 		left: 0;
+	}
+
+	.with_logos{
+		flex-direction: column;
+	}
+
+	.funders .funder_logo,
+	.partners .funder_logo{
+		height: auto !important;
+		width: 50%;
+		margin-bottom: 2rem;
 	}
 
 	#interaction_notification{
