@@ -689,7 +689,7 @@ h1.page_title{
 	margin: 0 1rem;
 }
 
-@media (max-height: 800px) and (min-width: 100px){
+@media (max-height: 800px) and (min-width: 1000px){
 	#map_container{
 		height: 30rem;
 		width: calc(100% - 6rem);
