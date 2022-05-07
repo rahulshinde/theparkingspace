@@ -369,8 +369,29 @@ h1.page_title{
   margin-top: 0;
 }
 
-#site_credits{
+#map_location{
+	bottom: calc(var(--outer_margin) * 3);
 
+}
+
+.download_map_container{
+	width: 15rem;
+	position: fixed;
+	background-color: var(--secondary);
+	border-radius: 1rem;
+	padding-bottom: 1rem;
+	padding-top: 0.5rem;
+	font-family: 'Roundaway Gothic';
+	font-size: var(--s_font);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	bottom: var(--outer_margin);
+	left: var(--outer_margin);
+}
+
+.download_map{
+	margin-top: 0.5rem;
 }
 
 /* Main navigation  */
@@ -680,6 +701,12 @@ h1.page_title{
 @media (max-width: 1000px), (hover: none){
 	#map_location{
 		z-index: 10;
+		bottom: auto;
+	}
+	.download_map_container{
+		position: static;
+		z-index: 10;
+		margin: 1rem auto 0rem auto;
 	}
 	.marker.tablet_marker{
 		display: block;
@@ -704,14 +731,14 @@ h1.page_title{
 	}
 
 	#interaction_notification{
-		top: 21rem;
+		top: 25rem;
 		bottom: auto;
 	}
 
 	.tablet_markers_container,
 	.streets_container{
 		position: absolute;
-		top: 34rem;
+		top: 38.5rem;
 		height: 30rem;
 		width: calc(100% - var(--outer_margin) * 2);
 	}
@@ -798,7 +825,7 @@ h1.page_title{
 	.tablet_markers_container,
 	.streets_container{
 		position: absolute;
-		top: 49rem;
+		top: 54.5rem;
 		height: 27rem;
 		width: 100%;
 		left: 0;
@@ -812,11 +839,12 @@ h1.page_title{
 	.partners .funder_logo{
 		height: auto !important;
 		width: 50%;
+		max-width: 15rem;
 		margin-bottom: 2rem;
 	}
 
 	#interaction_notification{
-		top: 36rem;
+		top: 43rem;
 	}
 
 	.logo{
